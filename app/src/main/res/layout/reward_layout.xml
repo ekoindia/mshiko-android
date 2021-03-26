@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+
+        <ImageView
+            android:padding="@dimen/dp10"
+            android:id="@+id/iv_back"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/tv_reason"
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dp10"
+            android:lineSpacingExtra="1sp"
+            android:textColor="@color/topaz_two"
+            android:textSize="@dimen/sp22"
+            app:fontname="Muli-Regular.ttf" />
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40">
+
+        <LinearLayout
+            android:id="@+id/ll_screenshot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+
+            <ImageView
+                android:layout_width="223dp"
+                android:layout_height="217dp"
+                app:srcCompat="@drawable/ic_gift_details_icon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp30">
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_won"
+                    android:textSize="@dimen/sp22"
+                    app:fontname="Muli-Regular.ttf"
+                    android:textColor="@color/black87" />
+
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_amount"
+                    android:textSize="@dimen/sp28"
+                    app:fontname="Muli-Regular.ttf"
+                    android:textColor="@color/black87" />
+
+            </LinearLayout>
+
+
+
+            <in.co.eko.fundu.views.customviews.CustomButton
+                android:id="@+id/btn_share"
+                style="@style/ButtonStyle"
+                android:layout_width="@dimen/dp250"
+                android:layout_height="@dimen/dp55"
+                android:layout_margin="@dimen/dp15"
+                android:background="@drawable/green_button_selector"
+                android:text="@string/share_with_friend"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="@dimen/sp20"
+                android:visibility="visible"
+                app:fontname="Muli-Regular.ttf"/>
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/reference_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp6"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/greyish_brown"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

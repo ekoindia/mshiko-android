@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_centerHorizontal="true"
+    >
+
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp15"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/sp15"
+            android:text="@string/transaction_successful"
+            android:layout_gravity="center_horizontal"
+            app:fontname="Muli-Light.ttf"/>
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hurray"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp20"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/sp25"
+            android:text="@string/hurray"
+            android:layout_gravity="center_horizontal"
+            app:fontname="Muli-Light.ttf"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp80"
+            app:srcCompat="@drawable/ic_cash_ok"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/amountValue"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp20"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/sp23"
+            android:text="@string/ksh_symbol"
+            android:layout_gravity="center_horizontal"
+            app:fontname="Muli-Regular.ttf"/>
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp13"
+            android:id="@+id/transaction_desc"
+            android:text="@string/amount_debitted"
+            android:textColor="@color/warm_grey"
+            android:layout_gravity="center_horizontal"
+            app:fontname="Muli-Regular.ttf"/>
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp13"
+            android:id="@+id/transaction_incentive"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/Black"
+            android:layout_gravity="center_horizontal"
+            app:fontname="Muli-Regular.ttf"/>
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp20"
+            android:text="@string/rate_experience"
+            android:layout_marginTop="@dimen/dp30"
+            android:textColor="@color/Black"
+            android:layout_gravity="center_horizontal"
+            app:fontname="Muli-Regular.ttf"/>
+
+        <RatingBar
+            android:layout_marginTop="@dimen/dp10"
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@null"
+            android:minHeight="50dp"
+            android:minWidth="20dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+
+            android:layout_gravity="center_horizontal"
+            android:progressDrawable="@drawable/selector_rating_star"
+            android:rating="0" />
+    </LinearLayout>
+</RelativeLayout>

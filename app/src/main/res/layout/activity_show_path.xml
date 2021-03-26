@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".activities.ShowPathActivity"
+    android:layout_height="match_parent">
+
+    <in.co.eko.fundu.views.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/slidePanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:umanoShadowHeight="4dp"
+        app:umanoPanelHeight="@dimen/dp150"
+        android:background="@color/Transparent"
+        tools:context="in.co.eko.fundu.activities.ShowPathActivity"> <!--app:umanoOverlay="true"-->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/no_user_around"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/building_network"
+                    android:textSize="@dimen/sp18"
+                    app:fontname="Muli-SemiBold.ttf"
+                    android:textColor="@color/black_three"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp45"
+                    android:layout_marginBottom="@dimen/dp45" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/no_user_network"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/map_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="com.techmobia.googlemapscreen.MapsActivity"/>
+
+                <ImageView
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="16dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ic_gps"/>
+            </RelativeLayout>
+
+            <!--<include-->
+                <!--android:id="@+id/gpsAuthenticationPopup"-->
+                <!--layout="@layout/gps_authentication_popup"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listofatmsmerchants"
+            android:background="@color/Transparent"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="@dimen/dp5"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="30sp"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="^"/>-->
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/info"
+                android:padding="@dimen/dp10"
+                android:paddingRight="@dimen/dp30"
+                android:text="@string/no_fundu_user_found"
+                android:background="@color/white"
+                app:fontname="Muli-Regular.ttf"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:id="@+id/eko_cash_point_info">
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp10"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp30"
+                android:text="@string/ecp"
+                android:background="@color/white"
+                android:textAllCaps="true"
+                android:textSize="@dimen/sp16"
+                app:fontname="Muli-Regular.ttf"
+                />
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp40"
+                android:text="@string/ecp_a"
+                android:textSize="@dimen/sp11"
+                android:paddingLeft="@dimen/dp10"
+                app:fontname="Muli-Regular.ttf"
+                />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/optionsList"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </in.co.eko.fundu.views.slidinguppanel.SlidingUpPanelLayout>
+    <include layout="@layout/activity_pair_contact_found"
+             android:visibility="gone"
+             android:background="@color/white"
+             android:id="@+id/eko_cash_point">
+    </include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:background="#60ffffff"
+        android:clickable="false"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"/>
+
+    </RelativeLayout>
+    <include
+        android:id="@+id/iFeedback"
+        layout="@layout/feedback_botton"
+        ></include>
+
+</RelativeLayout>
+
+

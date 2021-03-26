@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/White"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titlerl"
+                android:layout_marginTop="@dimen/dp20">
+            <ImageView
+                android:padding="@dimen/dp10"
+                android:id="@+id/imageview_back"
+                app:srcCompat="@drawable/ic_back"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/invite_friends"
+                android:textColor="@color/topaz_two"
+                android:textSize="@dimen/sp22"
+                app:fontname="Muli-SemiBold.ttf"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="233dp"
+                android:layout_height="217dp"
+                android:layout_below="@+id/titlerl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp30"
+                app:srcCompat="@drawable/ic_share"/>
+
+
+            <LinearLayout
+                android:id="@+id/sharecontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:layout_marginTop="@dimen/dp30"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:background="@drawable/amount_background"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_logo"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:id="@+id/invitationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/icon"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="left"
+                        android:padding="@dimen/dp10"
+                        android:text="@string/invite_msg"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp12"
+                        app:fontname="Muli-Regular.ttf"/>
+
+                </LinearLayout>
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:id="@+id/invitationLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="left"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="@dimen/sp11"
+                    app:fontname="Muli-Regular.ttf"/>
+
+            </LinearLayout>
+
+            <in.co.eko.fundu.views.customviews.CustomButton
+                android:id="@+id/share"
+                style="@style/ButtonStyle"
+                android:layout_width="@dimen/dp250"
+                android:layout_height="@dimen/dp55"
+                android:layout_below="@+id/sharecontent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/green_button_selector"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sp20"
+                app:fontname="Muli-Regular.ttf"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp10"
+                android:layout_below="@+id/share"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/feedback_botton"></include>
+</RelativeLayout>

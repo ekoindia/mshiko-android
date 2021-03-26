@@ -1,0 +1,207 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_texture_a"
+    tools:context="in.co.eko.fundu.activities.HomeActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Load Money"
+        android:background="@color/White"
+        android:theme="@style/ToolBarTheme"
+        android:minHeight="?attr/actionBarSize"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecyclerView"
+                android:layout_above="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+            <!--<ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:layout_above="@+id/view">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/_100"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_user_profile_cash" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Rs. 100"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:id="@+id/_200"
+                        android:paddingLeft="58dp"
+                        android:text="Rs. 200"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:id="@+id/_500"
+                        android:paddingLeft="58dp"
+                        android:text="Rs. 500"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="58dp"
+                        android:text="Rs. 700"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="58dp"
+                        android:text="Rs. 1,000"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="58dp"
+                        android:text="Rs. 1,200"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="58dp"
+                        android:text="Rs. 1,500"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+                </LinearLayout>
+            </ScrollView>-->
+
+            <View
+                android:layout_above="@+id/enter_amount_label_layout"
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.3"
+                android:layout_marginLeft="58dp"
+                android:layout_marginStart="40dp"
+                android:background="@color/button_material_dark" />
+            <LinearLayout
+                android:id="@+id/enter_amount_label_layout"
+                android:layout_above="@+id/enter_amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.6"
+                    android:src="@drawable/nav_help_unselected" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.6"
+                    android:text="@string/load_money_enter_amount_title"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/enter_amount_layout"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/enterAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:digits="0987654321"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/okButton"
+                    android:layout_width="90dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/green_button_background"
+                    android:text="@string/string_ok"
+                    android:textColor="@color/White"
+                    android:filterTouchesWhenObscured="true"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/below_shadow"
+            android:id="@+id/view3" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="umanoPanelHeight" format="dimension" />
+        <attr name="umanoShadowHeight" format="dimension" />
+        <attr name="umanoParallaxOffset" format="dimension" />
+        <attr name="umanoFadeColor" format="color" />
+        <attr name="umanoFlingVelocity" format="integer" />
+        <attr name="umanoDragView" format="reference" />
+        <attr name="umanoScrollableView" format="reference" />
+        <attr name="umanoOverlay" format="boolean"/>
+        <attr name="umanoClipPanel" format="boolean"/>
+        <attr name="umanoAnchorPoint" format="float" />
+        <attr name="umanoInitialState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+        <attr name="umanoScrollInterpolator" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="clickToClose" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ComboSeekBar">
+        <attr name="multiline" format="boolean" />
+        <attr name="myColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="unSelectedLine" format="color" />
+    </declare-styleable>
+    <declare-styleable name="AmountSelectorView">
+        <attr name="rangeCount" format="integer"/>
+        <attr name="filledColor" format="color"/>
+        <attr name="emptyColor" format="color"/>
+        <attr name="barHeightPercent" format="float"/>
+        <attr name="slotRadiusPercent" format="float"/>
+        <attr name="sliderRadiusPercent" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="SearchView">
+        <!-- The layout to use for the search view. -->
+        <attr name="layout" format="reference" />
+        <!--
+             The default state of the SearchView. If true, it will be iconified when not in
+             use and expanded when clicked.
+        -->
+        <attr name="iconifiedByDefault" format="boolean" />
+        <!-- An optional maximum width of the SearchView. -->
+        <attr name="android:maxWidth" />
+        <!-- An optional query hint string to be displayed in the empty query field. -->
+        <attr name="queryHint" format="string" />
+        <!-- The IME options to set on the query text field. -->
+        <attr name="android:imeOptions" />
+        <!-- The input type to set on the query text field. -->
+        <attr name="android:inputType" />
+        <!-- Close button icon -->
+        <attr name="closeIcon" format="reference" />
+        <!-- Go button icon -->
+        <attr name="goIcon" format="reference" />
+        <!-- Search icon -->
+        <attr name="searchIcon" format="reference" />
+        <!-- Voice button icon -->
+        <attr name="voiceIcon" format="reference" />
+        <!-- Commit icon shown in the query suggestion row -->
+        <attr name="commitIcon" format="reference" />
+        <!-- Layout for query suggestion rows -->
+        <attr name="suggestionRowLayout" format="reference" />
+        <!-- Background for the section containing the search query -->
+        <attr name="queryBackground" format="reference" />
+        <!-- Background for the section containing the action (e.g. voice search) -->
+        <attr name="submitBackground" format="reference" />
+        <attr name="android:focusable" />
+
+
+    </declare-styleable>
+
+    <declare-styleable name="font">
+        <attr name="fontname" format="string">
+
+
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Pinview">
+        <attr name="pinBackground" format="reference"/>
+        <attr name="pinLength" format="integer"/>
+        <attr name="pinWidth" format="dimension"/>
+        <attr name="pinHeight" format="dimension"/>
+        <attr name="splitWidth" format="dimension"/>
+        <attr name="cursorVisible" format="boolean"/>
+        <attr name="password" format="boolean"/>
+        <attr name="forceKeyboard" format ="boolean"/>
+        <attr name="hint" format="string"/>
+        <attr name="inputType"/>
+    </declare-styleable>
+    <attr name="inputType" format="enum">
+        <enum name="text" value="0"/>
+        <enum name="number" value="1"/>
+    </attr>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="line_count" format="integer"/>
+        <attr name="draw_progress_text" format="boolean"/>
+        <attr name="line_width" format="dimension|reference"/>
+        <attr name="background_color" format="color|reference"/>
+        <attr name="progress_start_color" format="color|reference"/>
+        <attr name="progress_between_color" format="color|reference"/>
+        <attr name="progress_end_color" format="color|reference"/>
+        <attr name="progress_text_color" format="color|reference"/>
+        <attr name="progress_text_size" format="dimension|reference"/>
+        <attr name="progress_stroke_width" format="dimension|reference"/>
+        <attr name="progress_background_color" format="color|reference"/>
+        <attr name="progress_text_format_pattern" format="string|reference"/>
+
+        <attr name="style">
+            <enum name="line" value="0"/>
+            <enum name="solid" value="1"/>
+            <enum name="solid_line" value="2"/>
+        </attr>
+
+        <attr name="progress_shader">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+
+        <attr name="progress_stroke_cap">
+            <enum name="butt" value="0"/>
+            <enum name="round" value="1"/>
+            <enum name="square" value="2"/>
+        </attr>
+
+    </declare-styleable>
+
+
+
+
+
+</resources>

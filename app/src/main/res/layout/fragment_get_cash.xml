@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/White"
+             tools:context="in.co.eko.fundu.activities.Tutorial">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30">
+
+            <ImageView
+                android:id="@+id/img_getcash"
+                android:layout_width="223dp"
+                android:layout_height="217dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp50"
+                app:srcCompat="@drawable/ic_gc"/>
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/txt_getcashTilteOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_getcash"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sp10"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/sp5"
+                android:singleLine="true"
+                android:text="@string/getcashTilteOne"
+                android:textColor="@color/topaz_two"
+                android:textSize="@dimen/sp22"
+                app:fontname="Muli-SemiBold.ttf"/>
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/txt_getcashTilteTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_getcashTilteOne"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sp20"
+                android:gravity="center"
+                android:text="@string/getcashTiltetwo"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp18"
+                app:fontname="Muli-Regular.ttf"/>
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/txt_getcashTilteThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_getcashTilteTwo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp12"
+                android:gravity="center"
+                android:text="@string/getcashTiltethree"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp14"
+                app:fontname="Muli-Light.ttf"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

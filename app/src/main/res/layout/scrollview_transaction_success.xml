@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_transaction_success">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_background"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_call"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-10dp"
+            android:alpha="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/a_minute_ago"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerColor" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_mail"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor"
+            tools:text="Rs. 2,500" />
+
+        <TextView
+            android:id="@+id/transactionMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-10dp"
+            android:alpha="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/have_been_sent_from_your_wallet_1"
+            android:textColor="@color/TitleColor"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerColor" />
+
+        <TextView
+            android:id="@+id/remainingAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_mail"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor"
+            tools:text="Rs. 3,456" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-10dp"
+            android:alpha="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/total_balance"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_mail"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

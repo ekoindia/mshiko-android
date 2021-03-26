@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_blank_profile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp300"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profilepic"
+            android:textSize="@dimen/sp17"
+
+            />
+
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/profilepic"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_call_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/call"
+
+
+                />
+
+            <ImageView
+                android:layout_marginLeft="@dimen/dp5"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_navigate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/navigate"
+
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@color/White"
+            android:layout_width="match_parent"
+            android:layout_below="@id/profilepic"
+            android:layout_height="@dimen/dp60">
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                app:fontname="Muli-Light.ttf"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/Black"
+                android:textAllCaps="true"
+                android:textSize="@dimen/sp20"
+                android:id="@+id/name"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

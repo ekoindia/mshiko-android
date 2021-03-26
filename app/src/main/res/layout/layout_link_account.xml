@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:id="@+id/containerAccounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_accounts" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <!-- This ImageView is only for making left margin or space-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_user_profile_call"
+                android:visibility="invisible"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/addMoreAccountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/activity_link_account_add_more"
+                android:textColor="@color/colorPrimary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_contacts" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <!-- This ImageView is only for making left margin or space-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_user_profile_call"
+                android:visibility="invisible"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/addMoreContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_link_account_add_more"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerEmails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <!-- This ImageView is only for making left margin or space-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_user_profile_call"
+                android:visibility="invisible"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/addMoreEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_link_account_add_more"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

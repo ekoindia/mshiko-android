@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.co.eko.fundu.activities.Acknowledgement">
+
+
+
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/helpIssue"
+        android:text="@string/acknowledge"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp15"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:textColor="@color/warm_grey_two"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="8sp"
+        android:gravity="center"
+        app:fontname="Muli-Regular.ttf"
+        />
+
+    <in.co.eko.fundu.views.customviews.CustomButton
+        app:fontname="Muli-Regular.ttf"
+        android:id="@+id/dismiss"
+        android:layout_width="@dimen/dp250"
+        android:layout_height="@dimen/dp60"
+        android:textAllCaps="false"
+        android:layout_below="@+id/helpIssue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp50"
+        android:background="@drawable/btn_backgrnd"
+        android:gravity="center"
+        android:text="@string/dismiss1"
+        android:textColor="@color/White"
+        android:textSize="@dimen/sp20"
+
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

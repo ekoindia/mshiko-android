@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.CheckOutActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp230"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/card_back"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                app:fontname="OCR A Std.ttf"
+                android:id="@+id/tv_cvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="90dp"
+                android:minWidth="50dp"
+                android:text="XXX"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/sp18" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

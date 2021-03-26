@@ -1,0 +1,310 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="in.co.eko.fundu.fragments.IdentificationFragment">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingStart="30dp"
+        >
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="@string/enter_phone_no"
+            android:textColor="@color/topaz_two"
+            android:textSize="@dimen/sp22"
+            app:fontname="Muli-Regular.ttf" />
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/please_enter_your_mobile_number"
+            android:textColor="@color/brownish_grey"
+            android:textSize="@dimen/sp16"
+            app:fontname="Muli-Regular.ttf" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/moblile_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            >
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="@string/select_country"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp16"
+                app:fontname="Muli-Regular.ttf" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinner_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingBottom="0dp"
+                    />
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/enter_phone_no"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp15"
+                app:fontname="Muli-Regular.ttf" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/country_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="+91"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp18"
+                        app:fontname="Muli-Regular.ttf" />
+
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+
+                        android:id="@+id/phoneEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_country"
+                        android:digits="0123456789"
+                        android:ems="18"
+                        android:focusable="true"
+                        android:hint="@string/phone"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp18"
+                        app:fontname="Muli-Regular.ttf" />
+
+                    <!-- &lt;!&ndash;<View android:layout_width="wrap_content"&ndash;&gt;
+                         &lt;!&ndash;android:layout_height="1dp"&ndash;&gt;
+                         &lt;!&ndash;android:id="@+id/line12"&ndash;&gt;
+                         &lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;
+                         &lt;!&ndash;android:background="@color/colorPrimary"/>&ndash;&gt;
+                     &lt;!&ndash;/>&ndash;&gt;-->
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/validation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp16"
+                app:fontname="Muli-Regular.ttf" />
+
+
+
+        </LinearLayout>
+        <in.co.eko.fundu.views.customviews.CustomButton
+            app:fontname="Muli-Regular.ttf"
+            android:textAllCaps="false"
+            android:id="@+id/sendCodeButton"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/dp250"
+            android:layout_height="@dimen/dp55"
+            android:gravity="center"
+            android:textSize="@dimen/sp20"
+            android:layout_below="@+id/moblile_container"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/green_button_selector"
+            android:enabled="false"
+            android:text="@string/confirm"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/sendCodeButton"
+            android:layout_marginTop="20dp"></RelativeLayout>
+    </RelativeLayout>
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <in.co.eko.fundu.customfonts.CustomTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp30"
+            android:text="Enter Phone Number"
+            android:textColor="@color/topaz_two"
+            android:textSize="@dimen/sp22"
+            app:fontname="Muli-SemiBold.ttf" />
+
+        <in.co.eko.fundu.customfonts.CustomTextView
+            android:id="@+id/textView_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp10"
+            android:text="@string/enter_phone_number"
+            android:textColor="@color/brownish_grey"
+            android:textSize="@dimen/sp16"
+            app:fontname="Muli-SemiBold.ttf" />
+
+
+        <ImageView
+            android:src="@drawable/phone"
+            android:layout_marginTop="@dimen/dp50"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <in.co.eko.fundu.customfonts.CustomEditText
+                android:id="@+id/country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:hint="+91"
+                android:background="@null"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp18"
+                app:fontname="Muli-Regular.ttf" />
+
+            <in.co.eko.fundu.customfonts.CustomEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:focusable="false"
+                android:hint="99586758654"
+                android:singleLine="true"
+                android:id="@+id/phoneEditText"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@null"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp33"
+                app:fontname="Muli-Regular.ttf" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp40"
+            android:background="@color/topaz_two"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp1"/>
+
+
+        <Button
+            android:id="@+id/sendCodeButton"
+            style="@style/ButtonStyle"
+            android:layout_width="130dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/moblile_container"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/green_button_selector"
+            android:enabled="false"
+            android:text="CONFIRM"
+            android:filterTouchesWhenObscured="true" />
+
+
+    </LinearLayout>-->
+
+
+
+
+
+
+
+</ScrollView>

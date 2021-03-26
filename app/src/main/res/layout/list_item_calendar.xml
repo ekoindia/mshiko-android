@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_icon_rl"
+            >
+            <in.co.eko.fundu.views.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user_image_white"
+                />
+            <TextView
+                android:textColor="@color/White"
+                android:id="@+id/user_initial"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/subtitle"
+            android:layout_toRightOf="@+id/user_icon_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/user_name"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Hover"
+                android:text=""
+                android:maxLines="2"
+                app:fontname="Muli-Regular.ttf"
+                android:textColor="@color/black87"
+                android:textSize="@dimen/sp15" />
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp20"
+                android:tag="Hover"
+                android:layout_below="@+id/user_name"
+                android:layout_centerVertical="true"
+                app:fontname="Muli-Regular.ttf"
+                android:textColor="@color/purpley_grey"
+                android:textStyle="bold"
+                android:text=""
+                android:textSize="@dimen/sp14" />
+
+
+        </LinearLayout>
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp30"
+            app:fontname="Muli-Regular.ttf"
+            android:layout_marginRight="@dimen/dp5"
+            android:textStyle="bold"
+            android:text=""
+            android:textColor="@color/black87"
+            android:textSize="@dimen/text_sizes_smallest" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/dropdown"-->
+            <!--android:layout_width="@dimen/dp30"-->
+            <!--android:layout_height="@dimen/dp30"-->
+            <!--android:tag="Hover"-->
+            <!--android:layout_marginRight="@dimen/dp5"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:padding="@dimen/dp8"-->
+            <!--android:src="@drawable/ferret"-->
+            <!--android:layout_alignParentRight="true"-->
+
+            <!--/>-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/repete"
+            android:visibility="gone"
+            android:src="@drawable/ic_repeat"/>
+        <ImageView
+            android:layout_width="@dimen/dp17"
+            android:layout_height="@dimen/dp17"
+            android:padding="2dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@+id/user_icon_rl"
+            android:layout_marginLeft="-25dp"
+            android:layout_alignTop="@+id/user_icon_rl"
+            android:id="@+id/transaction_tag"
+            android:background="@drawable/white_circle"
+            app:srcCompat="@drawable/ic_history_arrow_credit"/>
+
+
+    </RelativeLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/linearLayout_help"-->
+        <!--android:layout_marginLeft="@dimen/dp10"-->
+        <!--android:layout_marginRight="@dimen/dp10"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" >-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<in.co.eko.fundu.views.customviews.CustomTextView-->
+                <!--android:id="@+id/txid"-->
+                <!--android:text="1234"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:tag="Hover"-->
+                <!--android:layout_marginTop="@dimen/dp5"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:singleLine="true"-->
+                <!--app:fontname="Muli-Regular.ttf"-->
+                <!--android:textColor="@color/purpley_grey"-->
+                <!--android:textSize="@dimen/sp14" />-->
+
+            <!--<in.co.eko.fundu.views.customviews.CustomTextView-->
+                <!--android:id="@+id/tmetadata"-->
+                <!--android:text=""-->
+                <!--android:layout_below="@id/txid"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:tag="Hover"-->
+                <!--android:layout_marginTop="@dimen/dp5"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:singleLine="true"-->
+                <!--app:fontname="Muli-Regular.ttf"-->
+                <!--android:textColor="@color/purpley_grey"-->
+                <!--android:textSize="@dimen/sp14" />-->
+
+            <!--<in.co.eko.fundu.views.customviews.CustomTextView-->
+
+                <!--android:id="@+id/needhelp"-->
+                <!--android:text="Need Help ?"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:tag="Hover"-->
+                <!--android:layout_below="@+id/txid"-->
+                <!--android:padding="@dimen/dp8"-->
+                <!--android:background="@drawable/needhelp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginTop="@dimen/dp3"-->
+                <!--android:singleLine="true"-->
+                <!--app:fontname="Muli-Regular.ttf"-->
+                <!--android:textColor="@color/purpley_grey"-->
+                <!--android:textSize="@dimen/sp11" />-->
+
+
+        <!--</RelativeLayout>-->
+
+
+
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rlArrowBottom"-->
+            <!--android:layout_marginTop="@dimen/dp15"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<ImageView-->
+
+                <!--android:layout_gravity="right"-->
+                <!--android:id="@+id/arrowup"-->
+                <!--android:rotation="180"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_width="@dimen/dp30"-->
+                <!--android:layout_height="@dimen/dp30"-->
+                <!--android:tag="Hover"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:padding="@dimen/dp8"-->
+                <!--android:src="@drawable/ferret"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:singleLine="true"-->
+                <!--/>-->
+
+
+
+        <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <View
+        android:background="@color/white_three"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+</LinearLayout>

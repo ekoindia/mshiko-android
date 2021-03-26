@@ -1,0 +1,121 @@
+<RelativeLayout android:layout_marginTop="@dimen/dp10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:id="@+id/relativeLayout"
+    android:layout_marginLeft="@dimen/dp20"
+    android:layout_marginRight="@dimen/dp20"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:id="@+id/main_layout"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    android:layout_width="@dimen/dp180"
+    android:layout_height="wrap_content">
+
+
+
+
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_citi_bank"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/img_bankLogo"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60" />
+
+
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            app:fontname="Muli-Regular.ttf"
+            android:text="ICIC009"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/sp16"
+            android:layout_marginTop="@dimen/dp8"
+            android:textColor="@color/warm_grey"
+            android:id="@+id/txt_bankNameSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+        app:fontname="Muli-Regular.ttf"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:text="***********"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp10"
+        android:singleLine="true"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/warm_grey"
+        android:id="@+id/txt_accountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <RadioButton
+        android:layout_gravity="center_vertical|right"
+        android:id="@+id/radiobutton"
+        android:visibility="gone"
+        android:clickable="false"
+        android:checked="true"
+        android:layout_marginLeft="@dimen/dp20"
+        android:backgroundTint="@color/aqua_marine"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <!--<in.co.eko.fundu.customfonts.CustomTextView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp30"
+        app:fontname="Muli-Regular.ttf"
+        android:background="@drawable/"
+
+        android:singleLine="true"
+        android:padding="@dimen/dp3"
+        android:gravity="center_vertical"
+        android:visibility=""
+
+        android:id="@+id/linkedAccount"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+
+    <View
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_below="@+id/main_layout"
+        android:background="@color/white_three"
+        android:layout_width="@dimen/dp250"
+        android:layout_height="@dimen/dp1"/>
+
+
+
+
+</RelativeLayout>

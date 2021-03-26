@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="in.co.eko.fundu.fragments.IdentificationFragment">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:textColor="@color/topaz_two"
+            android:textSize="@dimen/sp22"
+            app:fontname="Muli-SemiBold.ttf"
+            android:id="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/choose_question"
+            />
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:textColor="@color/brownish_grey"
+            app:fontname="Muli-SemiBold.ttf"
+            android:id="@+id/textView9"
+            android:textSize="@dimen/sp16"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_below="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/why_select_question" />
+
+
+        <LinearLayout android:id="@+id/lin_ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/textView9"
+            android:orientation="vertical">
+
+            <Spinner android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_question"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="3dp"
+                android:paddingBottom="0dp"
+                />
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/lin_ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:id="@+id/lin_answer"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <in.co.eko.fundu.views.customviews.CustomEditText
+                    android:textColor="@color/brownish_grey"
+                    app:fontname="Muli-SemiBold.ttf"
+                    android:id="@+id/edtanswer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ems="20"
+
+                    android:textSize="@dimen/sp18"
+                    android:paddingLeft="7dp"
+                    android:hint="@string/enter_id_no"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" />
+
+                <!--<View android:layout_width="wrap_content"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@color/colorPrimary"/>-->
+                <!--/>-->
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/submitanswer"
+            android:layout_width="@dimen/dp250"
+            android:layout_height="@dimen/dp55"
+            style="@style/CommonButtonStyle"
+            android:layout_below="@+id/lin_answer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_backgrnd"
+            android:enabled="false"
+            android:text="@string/next"
+            android:filterTouchesWhenObscured="true" />
+
+    </RelativeLayout>
+</ScrollView>

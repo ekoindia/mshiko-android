@@ -1,0 +1,813 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTransalation" tools:locale="languageCode">
+    <string name="app_name">Fundu</string>
+
+    <!--<string name="verify_text_message">An OTP has been sent to your number. Enter\nit below to validate your number.</string>-->
+
+    <!-- <string name="google_app_id" translatable="false">AIzaSyBzFoPJDkDNyVnWgvzUIJI2cvR48p5_svU</string>   -->
+    <!-- End Configurations -->
+    <string name="google_map_key_for_server" translatable="false">your_key</string>
+    <string name="string_help">Help</string>
+    <string name="action_notification">Notification</string>
+    <string name="send_money_header_text">Send Money</string>
+    <string-array name="days">
+        <item>Tomorrow</item>
+        <item>Today</item>
+        <item>Sunday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string name="title_activity_terms_and_condition">Terms &amp; Conditions</string>
+    <string name="title_activity_popups">PopupsActivity</string>
+    <string-array name="block_type">
+        <item>Don\'t Report</item>
+        <item>Lorem Ipsum</item>
+        <item>Dolor Sit Amet</item>
+        <item>Consectetur Adipiscing Elit</item>
+        <item>Integer Mattis Odio</item>
+    </string-array>
+
+    <!--String bussinesstype[] = {"Company","Partnership","Sole Proprietor"};-->
+    <!--String vertical_market[] = {"Chemist", "restaurant", "bar", "shop"};-->
+    <string name="title_transaction_type">title_transaction_type</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="sample_data">Sample Data</string>
+    <string name="close">Close</string>
+    <string name="user_image">User Image</string>
+    <string name="gps_activate_button"><![CDATA[ACTIVATE & AUTHORIZE GPS]]></string>
+    <string name="gps_popup_title">ONE MORE THING</string>
+    <string name="gps_popup_subtitle">Fundu requires GPS to work and give you the\nbest experience.</string>
+    <string name="string_ok">OK</string>
+    <string name="load_money_enter_amount_title">ENTER A CUSTOM AMOUNT</string>
+    <string name="send_money">SEND MONEY</string>
+    <string name="request_money">REQUEST MONEY</string>
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue     cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian     bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber     cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese     the big cheese.</string>
+    <string name="cd_logo">Logo</string>
+    <string name="toolbar_search">Search</string>
+    <string name="appwidget_text">Fundu</string>
+
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="title_activity_my_profile">MyProfile</string>
+    <string name="sample_text_one">Picksum Ipsum is a badass text generator that will give you the best lines from some of the biggest Hollywood legends, including Clint Eastwood, Michael Caine, Jim Carrey and Morgan Freeman: Excuse me, I\'d like to ASS you a few questions. Hey, maybe I will give you a call sometime. Your number still 911? Look at that, it\'s exactly three seconds before I honk your nose and pull your underwear over your head. We got no food we got no money and our pets heads are falling off! Haaaaaaarry.</string>
+    <string name="sample_text_two">Beer Ipsum is perfect if you\'re searching for something a little more refreshing, and it\'s the ideal destination for delicious, malty ipsum text: Secondary fermentation degrees plato units of bitterness, cask conditioned ale ibu real ale pint glass craft beer. krausen goblet grainy ibu brewhouse lagering finishing hops. Trappist, black malt chocolate malt balthazar gravity dextrin saccharification trappist final gravity. Aau scotch ale, adjunct. hops bung infusion, cask conditioning pitching malt extract.</string>
+    <string name="sample_text_title_one">Picksum Ipsum</string>
+    <string name="sample_text_title_two">Beer Ipsum</string>
+    <string name="splash_eko_text_1">a product of</string>
+    <string name="splash_eko_text_2">Eko India Financial Services Pvt Ltd</string>
+    <string name="activity_link_account_hint_number" translatable="false">Number</string>
+    <string name="activity_link_account_add_more" translatable="false">+ ADD MORE</string>
+    <string name="activity_link_account_hint_acc_number" translatable="false">Account Number</string>
+    <string name="activity_link_account_ifsc_code" translatable="false">IFSC</string>
+    <string name="activity_link_account_hint_email" translatable="false">Email</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_need_cash" translatable="false">Need Cash</string>
+    <string name="title_select_amount" translatable="false">Enter amount</string>
+    <string name="title_convenience_pay" translatable="false">What convenience fee would you want to pay for this transaction?</string>
+    <string name="info_need_cash" translatable="false"><![CDATA[Selecting the 0% option will exclude Eko merchants & agents from the search.]]></string>
+    <string name="button_submit" translatable="false">Submit</string>
+    <string name="button_cancel" translatable="false">Cancel</string>
+    <string name="dialog_title_cancel_transaction" translatable="false">Cancel Transaction?</string>
+    <string name="dialog_button_close_window" translatable="false">Close window</string>
+    <string name="dialog_button_cancel_transaction" translatable="false">Cancel transaction</string>
+    <string name="text_sent" translatable="false">Sent</string>
+    <string name="text_personal" translatable="false">Personal</string>
+    <string name="text_mobile" translatable="false">Mobile</string>
+    <string name="text_terms" translatable="false"><![CDATA[Terms & Conditions]]></string>
+    <string name="title_social_profiles" translatable="false">Social Profiles</string>
+    <string name="button_connected" translatable="false">Connected</string>
+    <string name="button_connect" translatable="false">Connect</string>
+    <string name="title_yesterday" translatable="false">Yesterday</string>
+    <string name="text_app" translatable="false">App</string>
+    <string name="text_push_notification" translatable="false">Push Notification</string>
+    <string name="text_share_location" translatable="false">Share Location</string>
+    <string name="text_request" translatable="false">Available for Users Requests</string>
+    <string name="text_disable_request" translatable="false">Disable request until</string>
+    <string name="text_blocked_users" translatable="false">Blocked Users</string>
+    <string name="text_sign_out" translatable="false">Sign Out</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="text_change_accno" translatable="false">Change Account Number</string>
+    <string name="text_change_acc">Change Account</string>
+    <!--<string name="gcm_defaultSenderId" translatable="false">937157477368</string>-->
+    <string name="cancel_transaction" translatable="false">CANCEL TRANSACTION</string>
+    <string name="what_happened" translatable="false">What Happened?</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="have_been_sent_from_your_wallet_1" translatable="false">Have been sent from your wallet.</string>
+    <string name="have_been_sent_to_your_wallet" translatable="false">Have been sent to your wallet.</string>
+    <string name="have_been_sent_from_your_wallet_2" translatable="false">Have been sent to your wallet.</string>
+    <string name="tap_to_rate" translatable="false">Tap to Rate</string>
+    <string name="welcome" translatable="false">WELCOME</string>
+    <string name="thanks" translatable="false">THANKS!</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="phone" translatable="false">Phone</string>
+    <string name="please_enter_your_mobile_number" translatable="false">We will send a one time password via SMS to verify your phone number</string>
+    <string name="please_reset_fundu_pin_desp" translatable="false">Your Fundu PIN is used to secure your transaction. Please choose the new PIN below.</string>
+    <string name="please_change_fundu_pin_desp" translatable="false">Your Fundu PIN is used to secure your transaction. Please enter your current PIN and new PIN twice to confirm the change.</string>
+    <string name="update_days_and_time_desp" translatable="false">Update your shop opening and closing time with days open in a week.</string>
+    <string name="desp_update_account_no" translatable="false">Your Account Number is incorrect. Kindly enter correct Account Number </string>
+    <string name="ruppee_symbol" translatable="false">\u20B9</string>
+    <string name="text_check_balance" translatable="false">Please wait, getting started…</string>
+    <string name="file_provider_authority" translatable="false">in.co.eko.fundu</string>
+    <string name="country_code" translatable="false">+91</string>
+    <string name="country_code_ken" translatable="false">+254</string>
+
+    <!-- <string name="country_code" translatable="false">91</string>-->
+    <!--<string name="country_code_ken" translatable="false">254</string>// created by pallavi-->
+
+    <string name="double_zero" translatable="false">00</string>
+
+    <string-array name="nav_drawer_array_ind" translatable="false">
+        <!--<item>Home</item>-->
+        <!--<item>Get Cash from Friends</item>-->
+        <item>Invite Friends</item>
+        <item>Scan and Get Cash</item>
+        <item>Find ATM/Cash Point</item>
+        <!--<item>Link Account</item>-->
+        <item>History</item>
+        <item>Manage Account</item>
+        <item>Settings</item>
+        <item>Support</item>
+
+    </string-array>
+    <string-array name="nav_drawer_array_default" translatable="false">
+        <!-- <item>Home</item>-->
+        <item>Settings</item>
+        <item>Support</item>
+
+    </string-array>
+
+    <string-array name="nav_drawer_array_ken" translatable="false">
+        <!--<item>Home</item>-->
+        <item>Get Cash from Friends</item>
+        <!--<item>Find ATM</item>-->
+        <item>History</item>
+        <item>Settings</item>
+        <item>Support</item>
+    </string-array>
+
+
+    <!--Help Screen List-->
+    <string-array name="helpList" translatable="false">
+        <item>I did not receive cash</item>
+        <item>I do not feel safe</item>
+        <item>Other</item>
+
+    </string-array>
+
+
+    <!--- home actvity tabs titles-->
+    <string name="send_money_to" translatable="false">Send Money to</string>
+    <string name="send_money_to_bank_txt" translatable="false">Send Money to Axis*****272</string>
+    <string name="correct_amount_validation" translatable="false">Please enter correct amount</string>
+    <string name="balance_amount" translatable="false">Balance Amount</string>
+    <string name="error" translatable="false">Error</string>
+    <string name="insufficient_amount" translatable="false">Insufficient Amount. Please load your wallet first.</string>
+    <string name="wallet" translatable="false">WALLET</string>
+    <string name="upi" translatable="false">UPI</string>
+    <string name="from_you" translatable="false">"min, from you"</string>
+    <string name="less_than_minute" translatable="false">"less than a"</string>
+    <string name="mobile_type" translatable="false">mobile_type</string>
+    <string name="email_type" translatable="false">email_id</string>
+    <string name="account_type" translatable="false">acc_ifsc</string>
+    <string name="name" translatable="false">name</string>
+    <string name="visible" translatable="false">visible</string>
+    <string name="additional_id_type" translatable="false">additional_id_type</string>
+    <string name="additional_id_value" translatable="false">additional_id_value</string>
+    <string name="account_number_error" translatable="false">You Must enter Account Number</string>
+    <string name="ifsc_error" translatable="false">You Must enter IFSC Code</string>
+    <string name="empty_email_error" translatable="false">You Must enter Email Address</string>
+    <string name="empty_phone_number_error" translatable="false">You Must enter phone number</string>
+    <string name="identites" translatable="false">identities</string>
+    <string name="additional_identities" translatable="false">additional_identities</string>
+    <string name="invalid_email_address" translatable="false">Invalid Email Address!</string>
+    <string name="invalid_contact_number" translatable="false">Invalid Contact Number!</string>
+    <string name="need_cash_header_text" translatable="false">Need Cash</string>
+    <string name="alert" translatable="false">ALERT</string>
+    <string name="yes" translatable="false">YES</string>
+    <string name="no" translatable="false">NO</string>
+    <string name="transaction_successful" translatable="false">Transaction Successful!</string>
+    <string name="confirm" translatable="false">Confirm</string>
+    <string name="success" translatable="false">SUCCESS</string>
+    <string name="saved_succssfully" translatable="false">Saved Successfully!</string>
+    <string name="user_not_accept_request" translatable="false">User did not accept your request.</string>
+    <string name="action_search" translatable="false">Search</string>
+    <string name="contact_search_hint_text" translatable="false">Enter name or number</string>
+    <string name="map_search_hint_text" translatable="false">Enter shop name or number</string>
+
+
+    <string name="invite_friends">Invite Friends</string>
+    <string name="contact_permission">You have not given permission\nto access your contacts.</string>
+    <string name="get_started" translatable="false">GET STARTED</string>
+    <string name="skip" translatable="false">SKIP</string>
+    <string name="permissions" translatable="false">Permissions</string>
+    <string name="permissions_text" translatable="false">A few permissions are \nrequired to get you started</string>
+    <string name="permission_text" translatable="false">Following permission is \nrequired to get you started</string>
+    <string name="allow_acess" translatable="false">Allow Access</string>
+
+
+    <string name="getcashTilteOne" translatable="false">Everyone is an ATM</string>
+    <string name="getcashTiltetwo" translatable="false">Get cash from anyone on \n Fundu network</string>
+    <!--<string name="getcashTiltethree">Stop fretting about exorbitant fees, withdrawal limits and out-of-cash ATMs</string>-->
+    <string name="getcashTiltethree" translatable="false">Get cash without worrying about ATM issues. Simple and transparent fees.</string>
+    <string name="helpothersTitleOne" translatable="false">Cash Deposits Made Easy</string>
+    <string name="helpothersTilteTwo" translatable="false">Accept cash requests on Fundu and automatically deposit it into your bank account</string>
+    <string name="helpothersTilteThree" translatable="false">No filling slips and waiting in line at a bank.\nEarn a reward for each transaction!</string>
+    <string name="locateAtmsTitleOne" translatable="false">A full fledged ATM locator</string>
+    <string name="locateAtmsTilteTwo" translatable="false">Fundu automatically suggests the best nearby ATMs</string>
+    <string name="locateAtmsTilteThree" translatable="false">For times when users aren’t available to fulfill cash requests.</string>
+    <string name="phonetext" translatable="false">Used to link your bank account and facilitate transactions with other Fundu users</string>
+    <string name="contacts" translatable="false">Contacts</string>
+    <string name="contacttext" translatable="false">Used to allow you to perform transactions with friends and invite them to Fundu</string>
+    <string name="messages" translatable="false">Messages</string>
+    <string name="messagetext" translatable="false">Used to send and receive toll-free messages to verify your phone number and account</string>
+    <string name="location" translatable="false">Locations</string>
+    <string name="locationtext" translatable="false">Used to search for cash providers and ATMs nearby and facilitate navigation during a transaction</string>
+    <string name="phone_verification" translatable="false">Phone Verification</string>
+    <string name="compelete_your_profile" translatable="false">Compelete Your Profile</string>
+    <string name="complete_profile_message" translatable="false">Almost there! Please add a profile picture and name so you can start interacting with people on Fundu.</string>
+    <string name="oops" translatable="false">Oops!</string>
+    <string name="no_sim" translatable="false">We could not find a SIM card in your phone to verify your number. Please make sure you have a working phone number</string>
+    <string name="phone_num" translatable="false">Phone Number</string>
+    <string name="phonenumber_message" translatable="false">We found <b>two sim cards </b>in this phone. Please select the sim with which you are registered with your bank.</string>
+    <string name="title_referral" translatable="false">Own Your Referrals!</string>
+    <string name="info_referral" translatable="false">Invite friends without annoying the with multiple messages.</string>
+    <string name="bullet" translatable="false">\u2022</string>
+
+    <string name="support" translatable="false">You can call us if it’s urgent or \n drop an email to get a reply \n within 24 hours</string>
+    <string name="support_help">Need some help? or want to tell us your feedback? We would love to hear from you!</string>
+    <string name="title_history" translatable="false">History</string>
+    <string name="title_transaction_details">Transaction Details</string>
+    <string name="txnid">Txn ID:&#160;</string>
+    <string name="cash_received">Cash Received</string>
+    <string name="txn_fee">Transaction Fee</string>
+    <string name="you_paid">You Paid</string>
+    <string name="report_issue">Report Issue</string>
+    <string name="share">Share</string>
+    <string name="share_with_friend">Share with Friends</string>
+    <string name="you_won">You won&#160;</string>
+    <string name="amt_debited">Amount Debited</string>
+    <string name="status">Status:&#160;</string>
+    <string name="cash_provided">Cash Provided</string>
+    <string name="you_earned">You Earned</string>
+    <string name="you_got">You Got</string>
+    <string name="you_rated">You Rated&#160;</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="already_invited" translatable="false">Already Invited</string>
+    <string name="card_number_sample" translatable="false">XXXX XXXX XXXX XXXX</string>
+    <string name="card_validity_label" translatable="false">Expiry</string>
+    <string name="card_validity_sample" translatable="false">MM/YY</string>
+    <string name="card_name_sample" translatable="false">CARD HOLDER</string>
+
+    <string name="card_holders_name" translatable="false">Card Holder\'s Name</string>
+    <string name="card_number" translatable="false">Card Number</string>
+    <string name="card_validity" translatable="false">Expires</string>
+    <string name="card_cvv" translatable="false">CVV/CVC Number</string>
+
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_amount_desc_ken" translatable="false">Enter the amount of cash you would like to collect. Amount must be between Ksh 200 and 9000.</string>
+    <string name="request_cash">Request Cash</string>
+    <string name="request_active">Request Active</string>
+    <string name="request_active_desc">The Fundu network is working to fulfill your request you’ll be notified as soon as someone accepts your request.</string>
+    <string name="request_active_info">This may take upto 5 minutes. Feel free to leave the app and you’ll be notified as soon as someone accepts your request.</string>
+    <string name="request_active_desc_contact">We are working to fulfill your request you’ll be notified as soon as %s accepts your request.</string>
+    <string name="request_active_info_contact">This may take upto 5 minutes. Feel free to leave the app and you’ll be notified as soon as %s accepts your request.</string>
+
+    <string name="call" translatable="false">Call</string>
+
+    <string name="we_have_met" translatable="false">Tap When You Meet</string>
+    <string name="rs_symbol" translatable="false">₹</string>
+    <string name="ksh_symbol" translatable="false"><i>KSh</i></string>
+    <string name="authorize_transaction" translatable="false">Authorize Transaction</string>
+    <string name="authorize_transaction_desc_ken" translatable="false">Please enter the following to proceed with the transaction</string>
+    <string name="enter_verification_code" translatable="false">Enter Verification Code</string>
+    <string name="enter_fundu_pin" translatable="false">Enter Fundu Pin</string>
+    <string name="amount_debitted" translatable="false">was successfully transfered</string>
+    <string name="rate_experience" translatable="false">Rate Your Experience</string>
+    <string name="rate">Rate</string>
+    <string name="amount_creditted" translatable="false">has been received in your account</string>
+    <string name="hurray" translatable="false">Hurray!</string>
+
+    <string name="cash_request" translatable="false">Cash Request</string>
+    <string name="accept" translatable="false">Accept</string>
+    <string name="dismiss" translatable="false">DISMISS</string>
+    <string name="meeting_instructions" translatable="false">Notes/Special Instructions</string>
+    <string name="questionmark" translatable="false">\?</string>
+    <string name="select_friends_desc" translatable="false">Select friends whom you like to get cash from</string>
+    <string name="proceed" translatable="false">Proceed</string>
+    <string name="select_friend" translatable="false">Select Friend</string>
+    <string name="meet" translatable="false">Meet</string>
+    <string name="safe_secure" translatable="false">Completely Safe and Secure</string>
+    <!--<string name="diligent_customer_care">A diligent customer care team is available 24x7</string>-->
+    <string name="diligent_customer_care" translatable="false">Get help whenever required from our customer support team.</string>
+    <!--<string name="state_of_art">State of the art security and systems that build trust and prevent misuse</string>-->
+    <string name="state_of_art" translatable="false">The best security systems and processes to ensure your peace of mind.</string>
+    <string name="select_cancel_reasons" translatable="false">Select a reason for cancellation:</string>
+    <string name="cancel_reason_1">The provider is too far</string>
+    <string name="cancel_reason_2">Provider does not have exact cash</string>
+    <string name="cancel_reason_3">Unable to contact provider</string>
+    <string name="cancel_reason_4">I changed my mind</string>
+    <string name="cancel_reason_5">Provider unavailable</string>
+    <string name="cancel_reason_6">My reason is not listed</string>
+    <string name="cancel_reason_7">Unable to contact seeker</string>
+    <string name="cancel_reason_8">I don\'t have exact cash</string>
+    <string name="cancel_reason_9">Seeker asked me to cancel</string>
+    <string name="cancel_reason_10">Seeker is too far</string>
+    <string name="cancel_C" translatable="false">CANCEL</string>
+    <string name="dont_cancel">DON\'T CANCEL</string>
+    <string name="title_help" translatable="false">Help</string>
+    <string name="acknowledge" translatable="false">Thanks for letting us know.\n We’ll get back to you in 3\n hours. If its urgent you can call\n us anytime from the support\n option in the menu</string>
+    <string name="dismiss1" translatable="false">Dismiss</string>
+    <string name="done" translatable="false">Done</string>
+    <string name="invite_referral" translatable="false">Select people below and Fundu will credit you for their referral when they sign up. You will not be charged for invitation messages</string>
+    <string name="about" translatable="false">About</string>
+    <string name="titleAbout" translatable="false">About</string>
+    <string name="expiry" translatable="false">Expiry</string>
+    <string name="enter_card_details" translatable="false">Enter your card details to make the \n transaction more secure</string>
+    <string name="about_upi" translatable="false"><i>BHIM Unified Payments Interface - BHIM UPI is a payments system launched by the Government of India.</i> </string>
+    <string name="get_cash" translatable="false">Get Cash Now</string>
+    <string name="navigate" translatable="false">Navigate</string>
+    <string name="note" translatable="false">The compass shows Jeffery’s direction relative to your direction</string>
+    <string name="transactionCancelled" translatable="false">Transaction Cancelled</string>
+    <string name="transactionnote1" translatable="false">Uh oh! Looks like the user cancelled cash request.</string>
+    <string name="retry" translatable="false">Retry</string>
+    <string name="verifying" translatable="false">Verifying</string>
+    <!--<string name="enter_amount_desc_india">Enter the amount of cash you would like to collect. Amount must be between ₹ 200 and ₹ 2000.</string>-->
+    <string name="enter_amount_desc_india" translatable="false">How much cash you need?</string>
+    <string name="about_upi_part_two" translatable="false"><i>Fundu uses BHIM UPI to facilitate instant fund transfer between two bank accounts.</i></string>
+    <string name="upi_info_part_three" translatable="false"><i>BHIM UPI is completely secured by a PIN.\n Fundu uses this PIN for each\n transaction.</i></string>
+    <string name="learn_more" translatable="false">Learn More About BHIM UPI</string>
+    <string name="later" translatable="false">I’LL DO THIS LATER</string>
+    <string name="resendOtp" translatable="false">Didn’t receive the verification code?</string>
+    <string name="resend" translatable="false">Resend</string>
+    <string name="enter_acc_detail" translatable="false">Enter Account Details</string>
+    <string name="enterAccountDetails" translatable="false">Enter the details of the bank account in which you will receive money when providing cash to someone</string>
+    <string name="enetrAmountInfo" translatable="false">This account will be used to receive money if you provide cash to someone. Please fill the details carefully.</string>
+    <string name="selectAccount" translatable="false">Select Account</string>
+    <string name="addAccount" translatable="false">PROCEED WITH DIFFERENT ACCOUNT</string>
+    <string name="AmountPayable" translatable="false">You will pay</string>
+    <string name="attention" translatable="false">Attention</string>
+    <string name="changeAccInfo" translatable="false">Your presently linked account will be changed. Are you sure to reset your account information?</string>
+    <string name="lets_get_started" translatable="false">Let\'s Get Started</string>
+    <string name="confirmLink" translatable="false">Confirm</string>
+    <string name="selectBankInfo" translatable="false">We have found accounts linked with your phone number. Select to proceed.</string>
+    <string name="or" translatable="false">OR</string>
+    <string name="confirm_small" translatable="false">Confirm</string>
+    <string name="invalidCode" translatable="false">Incorrect Code</string>
+    <string name="funduNotification" translatable="false">Fundu Alert</string>
+    <string name="electronic_credit" translatable="false">have been successfully credited to your account.</string>
+    <string name="searchFreinds" translatable="false">Search Freind</string>
+    <string name="dialog_title" translatable="false">Information</string>
+    <string name="peopleAlreadyExists" translatable="false">people in your contacts are already on Fundu</string>
+    <string name="camera">Camera</string>
+    <string name="upi_transaction_info_title">BHIM UPI Payment Authorization</string>
+    <string name="upi_auth_details">In the next screen, you will see your transaction details. \n\nEnter your <b>BHIM UPI Pin</b> when you proceed and %s will be deducted from your account and will be held by Fundu.</string>
+    <string name="refund_info"><i>In case the transaction did not go through or you decide to cancel the transaction the amount will be refunded to you account instantly.</i></string>
+    <string name="i_understand">I Understand</string>
+    <string name="initiateTranx">Initiate Transaction</string>
+    <string name="cameratext">Used to update user profile picture</string>
+    <string name="storage">Storage</string>
+    <string name="storagetext">Used to take your valuable feedback.</string>
+    <string name="cancelReason">Please select a valid reason.</string>
+
+    <string name="cancelled">Cancelled</string>
+    <string name="failed">Failed</string>
+
+    <string name="onetimepass">A One Time Password (OTP) has been sent to %s via SMS. Please enter the OTP below</string>
+    <string name="onetimepasspermission">We have sent you a verification code to your phone number %s . Fundu will detect the SMS automatically. Please wait for 1 minute.</string>
+    <string name="email_us">EMAIL US</string>
+    <string name="call_us">CALL US</string>
+    <string name="login">Login</string>
+    <string name="login_desc">Login with the options below to make it easier for you</string>
+    <string name="becomeamerchant">Become a Merchant</string>
+    <string name="please_enter_amount_between">Please enter amount between %s</string>
+
+    <string name="sign_out">Signing out..</string>
+    <string name="no_network">Please check your network connection.</string>
+    <string name="version">Version</string>
+    <string name="select_bank">Select Your Bank</string>
+    <string name="device_not_supported">This device is not supported.</string>
+    <string name="received_cash_from">Received Cash from</string>
+    <string name="gave_cash_to">Gave Cash to</string>
+    <string name="please_wait">Please wait</string>
+    <string name="please_enter_all_fields">Please enter all fields</string>
+    <string name="registration_success">Registration Completed Successfully!</string>
+    <string name="please_give_all_permissions">Please give all permissions to proceed.</string>
+    <string name="fee">Fee</string>
+    <string name="transaction_failed">Transaction Failed</string>
+    <string name="payment_unsuccessful">Payment Unsuccessful</string>
+    <string name="payment_pending">Payment Pending</string>
+    <string name="transaction_refunded">Transaction Refunded</string>
+    <string name="refunded">Refunded</string>
+    <string name="transaction_code_limit_exhausted_desc">Your transaction is cancelled because you have entered wrong code too many times.</string>
+    <string name="transaction_failed_desc">Your transaction failed. We are sorry for the inconvenience.</string>
+    <string name="transaction_failed_retry">Transaction failed due to technical error. Retry or cancel the transaction.</string>
+    <string name="retry_C" translatable="false">RETRY</string>
+    <string name="check_balance">Check Balance</string>
+    <string name="too_many_otp_attempts">You have entered incorrect OTP too many times. We can not allow you to move forward. Please try again after some time.</string>
+    <string name="account">Account</string>
+    <string name="change">Change</string>
+    <string name="add_account">Add Account</string>
+    <string name="information">Information</string>
+    <string name="privacypolicy">Privacy policy</string>
+    <string name="tos">Terms of service</string>
+    <string name="bankaccounts">Bank Accounts</string>
+    <string name="settings">Settings</string>
+    <string name="setupipin">Set Pin</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="forgot_pin">Forgot PIN</string>
+    <string name="reffral_point1">Invite your friends and they will be counted as your referral for the next 6 months.</string>
+    <string name="reffral_point2">Other people won’t be able to invite people you’ve already invited, so your friends won’t get bothered with multiple invite messages.</string>
+    <string name="reffral_point3">Your invite goes through Fundu servers, no message charges to you!</string>
+    <string name="atm">ATM</string>
+    <string name="no_friends_fundu">No one from your contacts is on Fundu. Invite them.</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="include_screenshot">Include Screenshot</string>
+    <string name="send">Send</string>
+    <string name="pwyf">Please write your feedback</string>
+    <string name="tffb">Thank you for your feedback</string>
+    <string name="gtecp">Go to Eko Cash Point</string>
+    <string name="ecp_note">Proceed with BHIM UPI</string>
+    <string name="no_fundu_user_found">We couldn’t find any Fundu user near your location.</string>
+    <string name="ncpatm">Near by Cash points and ATMs</string>
+    <string name="ntam">You can still navigate to an Eko Cash Point or an ATM.</string>
+    <string name="ecp">Eko Cash Point</string>
+    <string name="ecp_a">Typically charge a lower transaction fee than bank ATMs</string>
+    <string name="una">User not available.</string>
+    <string name="sqr">Scan QR Code</string>
+    <string name="sqr_desc_m">Point your phone’s camera towards the merchant’s monitor and the scan the generated QR code.</string>
+    <string name="sqr_desc">Point your phone’s camera towards the QR code and scan it.</string>
+    <string name="got_it">Got it</string>
+    <string name="dstma">Don\'t show this message again</string>
+    <string name="issue">Issue</string>
+    <string name="issue_with">Issue with: </string>
+    <string name="email_support">We will get back to you on %s.</string>
+    <string name="new_user">New User</string>
+    <string name="upi_invalin_pin">You have entered invalid UPI PIN. Retry or cancel the transaction.</string>
+    <string name="upi_timeout">Transaction timed out. If your account is debitted, we will refund the money. Retry or cancel the transaction.</string>
+    <string name="c_u">We were unable to credit your account at the moment. Don\'t worry, your money is safe with us. Please wait for sometime.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="processing">Processing</string>
+    <string name="timedout">Timed Out</string>
+    <string name="qrcode_t_o">We could not get response from the bank. Please check your bank\'s message for correct status.</string>
+    <string name="i_pin">You have entered invalid UPI PIN.</string>
+    <string name="invalid_pin">Invalid Pin</string>
+    <string name="credit_processing">Credit processing</string>
+    <string name="cra">Someone else accepted first. Our network is growing. Next time respond fast and earn by giving cash.</string>
+    <string name="no_refund_required">No Refund Required</string>
+    <string name="report_block">Report / Block</string>
+    <string name="invite">Invite</string>
+    <string name="database">Database</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google+</string>
+    <string name="auto_cashout">Auto Cashout</string>
+    <string name="update_shop_timings">Update Shop Opening Days and Time</string>
+    <string name="total_earnings">Total Earnings from Invitations</string>
+    <string name="demo_string">Lorem ipsum doler sit amet:</string>
+    <string name="number_verified">Your number has been verified.</string>
+    <string name="map">Map</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="select_bank_name">Please select your bank name and enter account number. This will be used to make your transaction fast and simple.</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="xxxxxxxx">XXXXXXXXXXXXXX</string>
+    <string name="re_enter_acc_no">Re-enter Account Number</string>
+    <string name="new_acc_no">New Account Number</string>
+    <string name="hash">############</string>
+    <string name="fundu_pin">Fundu PIN</string>
+    <string name="enter_acc_no">Enter Account Number</string>
+    <string name="enter_bank_n_acc_no">Enter your complete bank \n account number</string>
+    <string name="name_on_card">Name on card</string>
+    <string name="icic">ICIC</string>
+    <string name="confirm_acc_no">Confirm Account Number</string>
+    <string name="start_inviting_contacts">No one from your contact is on Fundu,start inviting them.</string>
+    <string name="invite_people">Invite People</string>
+    <string name="change_fundu_pin">Change Fundu PIN</string>
+    <string name="enter_current_pin">Enter Current PIN</string>
+    <string name="enter_new_pin">Enter New PIN</string>
+    <string name="re_enter_new_pin">Re-enter New PIN</string>
+    <string name="confirm_txn_when_ready">Confirm the transaction once you are ready.\nYour wallet will be debited.</string>
+    <string name="confirm_cash_receipt">CONFIRM CASH RECEIPT</string>
+    <string name="give_out">GIVE OUT</string>
+    <string name="loading">Loading...</string>
+    <string name="total_balance">TOTAL BALANCE</string>
+    <string name="sos">SOS</string>
+    <string name="reset_fundu_pin">Reset Fundu PIN</string>
+    <string name="answer_security_question">Please answer the security question and verified your bank card details in order to reset your fundu PIN.</string>
+    <string name="security_question">Security Question</string>
+    <string name="card_info">Card Information</string>
+    <string name="expiry_month">Expiry Month</string>
+    <string name="expiry_year">Expiry Year</string>
+    <string name="reset_pin">Reset Pin</string>
+    <string name="you">You</string>
+    <string name="deducted_from_acc">Have been deducted from your Account?</string>
+    <string name="txn_id">Transaction Id</string>
+    <string name="info">Info</string>
+    <string name="friends">Friends</string>
+    <string name="related">Related</string>
+    <string name="enter_card_info">Enter Your Card Information</string>
+    <string name="exp_date">Expiration Date</string>
+    <string name="cvv_code">CVV Code</string>
+    <string name="what_is_cvv">What is CVV?</string>
+    <string name="save_card_for_future">Save Card for Future Use</string>
+    <string name="load_wallet">Load Wallet</string>
+    <string name="choose_question">Choose Security Question</string>
+    <string name="why_select_question">Please select from one of the security question below and provide an answer.This will be used to secure your account.</string>
+    <string name="enter_id_no">Enter ID Number</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="describe_issue">Describe your issue</string>
+    <string name="some_desc">Some Description</string>
+    <string name="signup_as_merchant">Sign up as a Merchant/Agent</string>
+    <string name="name_of_shop">Name of Shop/Business</string>
+    <string name="enter_business_name">Enter Business Name</string>
+    <string name="business_no">Incorporation/Business Number</string>
+    <string name="enter_business_no">Enter Business Number</string>
+    <string name="contact_name">Contact Person Name</string>
+    <string name="enter_person_name">Enter Person Name</string>
+    <string name="contact_person_phone">Contact Person Phone Number</string>
+    <string name="enter_person_no">Enter Person Number</string>
+    <string name="address">Address</string>
+    <string name="enter_address">Enter address</string>
+    <string name="business_type">Type of Business</string>
+    <string name="select_business_type">Select Business Type</string>
+    <string name="vertical_market">Vertical Market</string>
+    <string name="select_vertical_market">Select Vertical Market</string>
+    <string name="verify_string">verify</string>
+    <string name="enter_card_no">Enter Card Number</string>
+    <string name="digit500">500</string>
+    <string name="digit1000">1000</string>
+    <string name="digit1500">1500</string>
+    <string name="digit2000">2000</string>
+    <string name="digit5000">5000</string>
+    <string name="enter_phone_no">Enter Phone Number</string>
+    <string name="select_country">Select your Country</string>
+    <string name="enter_cvv">Enter CVV</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="confirm_transaction">Confirm Transaction</string>
+    <string name="send_to">Send To</string>
+    <string name="amt_requested">Amount Requested</string>
+    <string name="total">Total</string>
+    <string name="time_remaining">Time Remaining :</string>
+    <string name="enter_your_fundu_pin">Enter your 4 digit Fundu PIN</string>
+    <string name="a_minute_ago">a minute ago</string>
+    <string name="set_fundu_pin">Set Fundu APP PIN</string>
+    <string name="create_pin">create a 4-digit PIN with which all transactions will be secured</string>
+    <string name="new_fundu_pin">NEW FUNDU PIN</string>
+    <string name="confirm_fundu_pin">CONFIRM FUNDU PIN</string>
+    <string name="pins_dont_match">PINs do not match</string>
+    <string name="incorrect_otp">Incorrect OTP</string>
+    <string name="id">IDENTIFICATION</string>
+    <string name="date">date</string>
+    <string name="faq">FAQ</string>
+    <string name="need_help">Need Help ?</string>
+    <string name="id_value">ID VALUE</string>
+    <string name="shop_opening_time">Shop Opening Time</string>
+    <string name="shop_closing_time">Shop Closing Time</string>
+    <string name="opening_days">Opening Days</string>
+    <string name="update">Update</string>
+    <string name="support_string">Support</string>
+    <string name="digit100">100</string>
+    <string name="disable_request">Disable request until</string>
+    <string name="user_txns">User Transactions</string>
+    <string name="cvv_cvc">CVV/CVC</string>
+    <string name="a_product_of">A product of</string>
+    <string name="my_location">My location</string>
+    <string name="requested_location">Requested location</string>
+    <string name="select_all">Select All</string>
+    <string name="no_left_in_contacts">Sorry,there is no one left in your contact.</string>
+    <string name="send_invite">Send Invite</string>
+    <string name="invite_msg">Tired of running out of cash at the most unexpected times? Fundu lets you get cash instantly from nearby people, Cash Points and ATMs.</string>
+    <string name="invite_string">Invite</string>
+    <string name="location_people">Location, People, ... </string>
+    <string name="favorites">Favorites</string>
+    <string name="agents">Agents</string>
+    <string name="merchants">Merchants</string>
+    <string name="bangalore">Bangalore</string>
+    <string name="see_more_recent">SEE MORE RECENT</string>
+    <string name="enter_code_manually">Please enter the code manually</string>
+    <string name="get_cash_from_atm">You can still get cash from an Eko Cash Point \n or an ATM around you in the meanwhile</string>
+    <string name="building_network">We’re still building \n network in your area!</string>
+
+
+    <string name="sqr_add">Add code to scan QR Code</string>
+    <string name="fetch_profile_add">Add Code to fetch profile</string>
+    <string name="check_balance_add">Add Code to check user balance</string>
+    <string name="upi_pin_add">Add Code to set UPI Pin</string>
+    <string name="user_account_add">Add Code to add user Bank account</string>
+    <string name="manage_account_add">Add code to manage Bank account</string>
+    <string name="receive_add">Add code to handle receive intent</string>
+    <string name="user_registeration_add">Add code for user registeration</string>
+
+</resources>

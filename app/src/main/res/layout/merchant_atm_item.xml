@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10"
+    android:layout_height="wrap_content">
+<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="@dimen/dp10"
+              android:paddingBottom="@dimen/dp10"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@id/icon"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center_vertical"
+            >
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXXXXX"
+                android:textSize="@dimen/sp16"
+                app:fontname="Muli-Regular.ttf"/>
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="@dimen/sp11"
+                app:fontname="Muli-Regular.ttf"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/dp1"
+        android:layout_height="@dimen/dp40"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white_two"/>
+
+    <LinearLayout
+        android:id="@+id/navigate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/ripple_side_menu_selection"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_navigate_atm">
+
+        </ImageView>
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp10"
+            android:textSize="@dimen/sp11"
+            android:text="@string/navigate"
+            app:fontname="Muli-Regular.ttf"/>
+
+    </LinearLayout>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/white_two"/>
+</LinearLayout>

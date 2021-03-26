@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.co.eko.fundu">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".FunduApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:name,android:screenOrientation"
+        android:screenOrientation="portrait"
+        android:allowBackup="false"
+
+        >
+        <!--<provider-->
+        <!--android:name="com.facebook.FacebookContentProvider"-->
+        <!--android:authorities="com.facebook.app.FacebookContentProvider1988353388114699"-->
+        <!--android:exported="true"/>-->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/file_provider_authority"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fundu_app_widget_info" />
+        </provider>
+
+
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.journeyapps.barcodescanner.CaptureActivity"
+                  tools:replace="screenOrientation"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activities.UserOnboardingActivity"
+            android:descendantFocusability="afterDescendants"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+                <data
+                    android:host="hn34u.app.goo.gl"
+                    android:scheme="http" />
+                <data
+                    android:host="hn34u.app.goo.glf"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hn34u.app.goo.gl"
+                    android:scheme="http" />
+                <data
+                    android:host="hn34u.app.goo.glf"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.IntentReceiverActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="pay"
+                    android:scheme="upi" />
+            </intent-filter>
+        </activity>
+        <!-- original key store -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${google_map_key}" />
+
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAGmLLhnosEZEBqJuoxATQWcNLtCBz_gAs" />
+        -->
+
+        <activity
+            android:name=".activities.UpdateDaysAndTime"
+            android:label="Update Days and Time"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.UpadteAccountNoActivity"
+            android:label="Update Account Number"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.MerchantProfile"
+            android:label="Merchant"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LinkAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".database.DatabaseManager"
+            android:screenOrientation="portrait" />
+        <!--
+        <provider
+            android:name=".database.FunduContentProvider"
+            android:authorities="in.co.eko.fundu"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedContentProvider" />
+        -->
+        <receiver
+            android:name=".receiver.IncomingSms"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name=".gcm.FunduGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".gcm.FunduJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.ProviderLocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name=".gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name=".gcm.RegistrationIntentService"
+            android:exported="false" />
+        <!--
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                &lt;!&ndash;
+                  IMPORTANT: If you change the package name of this sample app,
+                  change "com.parse.tutorials.pushnotifications" in the lines
+                  below to match the new package name.
+                &ndash;&gt;
+                <category android:name="in.co.eko.fundu" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity
+            android:name=".activities.BaseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.CommitTransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TransactionSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PairContactFoundActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <receiver
+            android:name=".gcm.FunduRequestReceiver"
+            android:exported="false"
+            android:protectionLevel="signature">
+            <intent-filter>
+                <action android:name="in.co.eko.fundu.RECEIVE_REQUEST" />
+
+                <category android:name="in.co.eko.fundu" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".gcm.GpsStatusReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.ShowPathActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SendMoneyToAccountConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MoneyToAccountSuccess"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Tutorial"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".services.NearByContactsService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <service
+            android:name=".services.SyncContactsIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2a36f3f955fcdf063299acc1a33704d8c5de8db2" />
+
+        <service
+            android:name=".services.UpdateDatabaseForExisitingUserService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- <activity android:name=".activities.permissions.PermissionsActivity"></activity> -->
+
+        <activity
+            android:name=".activities.PermissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TakeImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CompleteYourProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CashRequestAction"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GiveCash"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GetCashFromContact"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DescribeIssue"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".activities.Acknowledgement" />
+        <activity android:name=".activities.About" />
+        <activity
+            android:name=".activities.Faq"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TransactionStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CheckOutActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.upi.YesBankUPIClient"></activity>
+        <activity
+            android:name=".activities.Feedback"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".activities.WebViewActivity"></activity>
+    </application>
+
+</manifest>

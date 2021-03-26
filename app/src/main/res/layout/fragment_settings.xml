@@ -1,0 +1,652 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="horizontal">
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/settings"
+                android:textColor="@color/topaz_two"
+                android:textSize="@dimen/sp22"
+                app:fontname="Muli-SemiBold.ttf" />
+
+
+            <ImageView
+                android:padding="@dimen/dp10"
+                android:id="@+id/imageview_back"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="in.co.eko.fundu.fragments.SettingsFragment">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/title_social_profiles"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:fontname="Muli-SemiBold.ttf" />
+
+                <ImageView
+                    android:id="@+id/iv_social_pic"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignLeft="@+id/tv_title"
+                    android:layout_alignStart="@+id/tv_title"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/facebook" />
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:id="@+id/tv_social_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_social_pic"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/iv_social_pic"
+                    android:layout_toRightOf="@+id/iv_social_pic"
+                    android:text="@string/facebook"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    app:fontname="Muli-Light.ttf" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_social_pic"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true">
+
+                    <Button
+                        android:id="@+id/buttonConnect"
+                        style="@style/ButtonStyleTwo"
+                        android:layout_width="150dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/green_button_background"
+                        android:enabled="false"
+                        android:filterTouchesWhenObscured="true"
+                        android:text="@string/button_connected"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ic_check_btn" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_social_pic">
+
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/google_plus" />
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView8"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/imageView8"
+                        android:layout_toRightOf="@+id/imageView8"
+                        android:text="@string/google"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        app:fontname="Muli-Light.ttf" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        style="@style/ButtonStyleTwo"
+                        android:layout_width="150dp"
+                        android:layout_height="48dp"
+                        android:layout_alignBottom="@+id/imageView8"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/green_button_background"
+                        android:filterTouchesWhenObscured="true"
+                        android:text="@string/button_connect"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/rl1"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.7"
+                    android:background="@color/DividerColor" />
+
+            </RelativeLayout>
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_app"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:fontname="Muli-SemiBold.ttf" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rlAutoCashOutSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:visibility="gone">
+
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/auto_cashout"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp15"
+                        app:fontname="Muli-Light.ttf" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/autoCashOutSwitch"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="false"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:textColor="@color/text_color_gray"
+
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/viewAutoCashOutSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_three"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rlNotificationSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_margin="16dp">
+
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_push_notification"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp16"
+                        app:fontname="Muli-Light.ttf" />
+
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/notificationSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/viewNotificationSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:background="@color/white_three"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/rlShareLocationSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:visibility="gone">
+
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_share_location"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp15"
+                        app:fontname="Muli-Light.ttf" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/shareLocationSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:textColor="@color/text_color_gray"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/viewShareLocationSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_five"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rlUserRequestSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:visibility="gone">
+
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_request"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp15"
+                        app:fontname="Muli-Light.ttf" />
+
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/userRequestSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llDisableUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:id="@+id/tv_item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_disable_request"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp14"
+                        app:fontname="Muli-Light.ttf" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/days"
+                        android:spinnerMode="dropdown"></Spinner>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewDisableUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_five"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rlBlockedUserSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:visibility="gone">
+
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_blocked_users"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp15"
+                        app:fontname="Muli-Light.ttf" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/blockedUserSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:textColor="@color/text_color_gray"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/viewBlockedUserSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white_five"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/dp16">
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:id="@+id/termsAndCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:text="@string/text_terms"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp16"
+                        app:fontname="Muli-Light.ttf" />
+
+
+                    <View
+                        android:id="@+id/viewtermsAndCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:background="@color/white_three" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:id="@+id/changeaccountnumber"
+                    android:paddingTop="16dp">
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/text_change_acc"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="@dimen/sp16"
+                    app:fontname="Muli-Light.ttf" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white_three"
+                   />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:id="@+id/updatedays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/update_shop_timings"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp15"
+                        android:visibility="gone"
+                        app:fontname="Muli-Light.ttf" />
+
+
+                    <View
+                        android:id="@+id/viewupdatedays"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:background="@color/white_three"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/incentivesrl"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        >
+
+                        <in.co.eko.fundu.views.customviews.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/facebook"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/sp16"
+                            app:fontname="Muli-Light.ttf" />
+
+                        <in.co.eko.fundu.views.customviews.CustomTextView
+                            android:id="@+id/incentiveVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/sp16"
+                            app:fontname="Muli-Light.ttf" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="@color/white_three"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/becomeamerchant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/dp16">
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:text="@string/becomeamerchant"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp16"
+                        app:fontname="Muli-Light.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="@color/white_three"
+                         />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp">
+
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:id="@+id/about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/about"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/sp16"
+                        android:visibility="visible"
+                        app:fontname="Muli-Light.ttf" />
+
+                    <View
+                        android:id="@+id/viewabout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="@color/white_three"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:id="@+id/rate_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/rate_us"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="@dimen/sp16"
+                    android:visibility="visible"
+                    app:fontname="Muli-Light.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white_three"
+                    android:visibility="visible" />
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:id="@+id/signOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/text_sign_out"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="@dimen/sp16"
+                    android:visibility="visible"
+                    app:fontname="Muli-Light.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white_three"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

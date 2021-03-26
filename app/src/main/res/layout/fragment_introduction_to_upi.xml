@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+
+    <ImageView
+        android:layout_width="@dimen/dp155"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp40"
+        app:srcCompat="@drawable/ic_bhim_upi"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/warnings"
+        android:textSize="@dimen/sp17"
+        android:visibility="gone"
+        android:text="@string/error"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        />
+
+    <!--<in.co.eko.fundu.customfonts.CustomTextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp10"
+        android:text="@string/learn_upi"
+        app:fontname="Muli-Regular.ttf"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/brownish_grey"
+        android:layout_marginTop="@dimen/dp10"
+
+        />-->
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/BlackShadeOne"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:text="@string/about_upi"
+        app:fontname="source-sans-pro.light.ttf"
+        android:textSize="@dimen/sp16"
+        android:layout_marginTop="@dimen/dp30"
+        />
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginLeft="@dimen/dp30"
+        android:textColor="@color/BlackShadeOne"
+        android:text="@string/about_upi_part_two"
+        app:fontname="source-sans-pro.light.ttf"
+        android:textSize="@dimen/sp16"
+        android:layout_marginTop="@dimen/dp1"
+        />
+
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_user_bank"/>
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:srcCompat= "@drawable/ic_arrow"/>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_user_bank"/>
+
+
+    </LinearLayout>
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontname="source-sans-pro.light.ttf"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/BlackShadeOne"
+        android:layout_margin="@dimen/dp9"
+        android:lineSpacingExtra="@dimen/sp1"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp40"
+        android:text="@string/upi_info_part_three"
+        />
+
+
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:visibility="gone"
+        android:id="@+id/learnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontname="Muli-SemiBold.ttf"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/topaz_two"
+        android:lineSpacingExtra="@dimen/sp1"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="@string/learn_more"
+        />
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/createVPA"
+        android:textAllCaps="false"
+        android:layout_width="@dimen/dp250"
+        android:layout_height="@dimen/dp55"
+        android:gravity="center"
+        android:textSize="@dimen/sp20"
+        android:background="@drawable/green_button_background"
+        android:text="@string/lets_get_started"
+        app:fontname="Muli-Regular.ttf"
+        android:textColor="@color/White"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        />
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/later"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/later"
+        app:fontname="Muli-Regular.ttf"
+        android:textSize="@dimen/sp14"
+        android:padding="@dimen/dp10"
+        android:visibility="invisible"
+        android:textColor="@color/warm_grey"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        />
+
+
+</LinearLayout>

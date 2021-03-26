@@ -1,0 +1,340 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg_texture_a">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_marginBottom="60dp"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:text="@string/confirm_transaction" />
+    <LinearLayout android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_background"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:gravity="center_vertical"
+                    android:text="@string/send_to"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user_profile_mail"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="-10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/TitleColor" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_mobile"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user_profile_call"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/TitleColor" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="-8dp"
+            android:background="@color/DividerColor" />
+        <!--FUNDU_JAN_733f9d4b-->
+        <TextView
+            android:id="@+id/pTid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_mail"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="48dp"-->
+        <!--android:layout_marginStart="48dp"-->
+            <!--android:layout_marginTop="-10dp"-->
+            <!--android:alpha="0.7"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="Transaction Id"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginLeft="48dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@color/DividerColor" />-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/amt_requested"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:drawableLeft="@drawable/ic_user_profile_cash"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="-8dp"
+            android:background="@color/DividerColor" />
+
+
+
+        <TextView
+            android:id="@+id/transactionMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/txn_fee"
+            android:textColor="@color/TitleColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/fees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_cash"
+            android:gravity="center_vertical"
+            android:layout_marginTop="-10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="-8dp"
+            android:background="@color/DividerColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/total"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pTotalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:drawableLeft="@drawable/ic_user_profile_cash"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="-8dp"
+            android:background="@color/DividerColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_mail"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/enter_verification_code"/>
+
+        <EditText android:id="@+id/edittextotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 1234"
+            android:textColorHint="@color/black_38"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789"
+            android:ems="15"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="4"
+            android:background="@null"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerColor" />
+
+        <TextView android:id="@+id/oneMinute"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_remaining"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/enter_your_fundu_pin" />
+
+        <EditText android:id="@+id/editfundupin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black_38"
+
+            android:hint="####"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789"
+            android:ems="15"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:background="@null"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/DividerColor" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/canceltotp"
+            android:layout_width="140dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_button_background"
+            android:text="@string/cancel_C"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:filterTouchesWhenObscured="true"/>
+
+        <Button
+            android:id="@+id/submitTotp"
+            android:layout_width="140dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:background="@drawable/green_button_background"
+            android:text="@string/confirm"
+            android:textAllCaps="true"
+            android:textColor="@color/White"
+            android:textSize="12sp"
+            android:filterTouchesWhenObscured="true"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

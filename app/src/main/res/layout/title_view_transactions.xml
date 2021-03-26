@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/titleView"
+    android:layout_marginTop="@dimen/dp20"
+    android:paddingTop="@dimen/dp10">
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        app:fontname="Muli-Regular.ttf"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/sp22"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/dp20"
+        android:background="@drawable/information_background"
+        android:clickable="true"
+        android:textColor="@color/White"
+        android:textSize="@dimen/sp20"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:onClick="onClickInfomationButton"/>
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="@dimen/dp24"
+        android:layout_height="@dimen/dp24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp20"
+        android:textSize="@dimen/sp10"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:text="@string/questionmark"
+        android:clickable="true"
+        android:visibility="gone"
+        android:onClick="onClickHelpButton"
+        android:background="@drawable/help_background"/>
+
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        app:fontname="Muli-Regular.ttf"
+        android:id="@+id/helptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp20"
+        android:textSize="@dimen/sp8"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_below="@+id/help"
+        android:textAllCaps="true"
+        android:textColor="@color/pinkish_grey_87"
+        android:text="@string/string_help"
+        />
+
+</RelativeLayout>

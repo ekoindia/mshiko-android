@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:id="@+id/progress_bar_2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:visibility="visible"
+              android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/dot1_2"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/meet_circle_complete"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        >
+
+        <ImageView
+            android:id="@+id/dot2_2"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp80"
+            android:src="@drawable/meet_circle_incomplete"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.co.eko.fundu.activities.Faq">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal">
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="1sp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/faq"
+            android:textColor="@color/topaz_two"
+            android:textSize="@dimen/sp22"
+            app:fontname="Muli-SemiBold.ttf" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/imageview_back"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            app:srcCompat="@drawable/ic_close"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_below="@+id/relativeLayout"
+        android:background="@color/white_three"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

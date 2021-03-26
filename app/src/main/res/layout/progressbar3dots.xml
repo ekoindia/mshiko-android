@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:id="@+id/progress_bar_3"
+android:weightSum="3"
+android:visibility="gone"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#00000000">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+    <ImageView
+        android:layout_width="@dimen/dp15"
+        android:layout_height="@dimen/dp15"
+        android:id="@+id/dot1_3"
+        android:src="@drawable/meet_circle_complete"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    >
+    <ImageView
+        android:layout_width="@dimen/dp15"
+        android:layout_height="@dimen/dp15"
+        android:id="@+id/dot2_3"
+        android:src="@drawable/meet_circle_incomplete"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="end"
+    >
+    <ImageView
+        android:layout_width="@dimen/dp15"
+        android:layout_height="@dimen/dp15"
+        android:id="@+id/dot3_3"
+        android:src="@drawable/meet_circle_incomplete"/>
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginLeft="@dimen/dp30"
+        android:textSize="@dimen/sp14"
+        app:fontname="Muli-Regular.ttf"
+        android:gravity="center_horizontal"
+        android:textColor="@color/brownish_grey"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:id="@+id/givecash_tranxInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp60"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <in.co.eko.fundu.views.customviews.CustomEditText
+
+            android:layout_margin="@dimen/dp10"
+            android:id="@+id/etTranxCode1"
+            android:textColor="@color/Black"
+            app:fontname="Muli-SemiBold.ttf"
+            android:textSize="@dimen/sp70"
+            android:maxLength="1"
+            android:maxEms="1"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:focusable="true"
+            android:backgroundTint="@color/black"
+
+            android:layout_width="@dimen/dp64"
+            android:layout_height="@dimen/dp120" />
+
+        <in.co.eko.fundu.views.customviews.CustomEditText
+
+            android:imeOptions="actionNext"
+
+            android:maxLength="1"
+            android:maxEms="1"
+            android:inputType="number"
+            android:layout_margin="@dimen/dp10"
+            android:id="@+id/etTranxCode2"
+            android:textColor="@color/Black"
+            app:fontname="Muli-SemiBold.ttf"
+            android:textSize="@dimen/sp70"
+            android:backgroundTint="@color/black"
+
+            android:layout_width="@dimen/dp64"
+            android:layout_height="@dimen/dp120" />
+
+        <in.co.eko.fundu.views.customviews.CustomEditText
+            android:imeOptions="actionDone"
+            android:maxLength="1"
+            android:maxEms="1"
+            android:layout_margin="@dimen/dp10"
+            android:inputType="number"
+            android:letterSpacing="0.2"
+            android:backgroundTint="@color/black"
+            android:id="@+id/etTranxCode3"
+            android:textColor="@color/Black"
+            app:fontname="Muli-SemiBold.ttf"
+            android:textSize="@dimen/sp70"
+            android:layout_width="@dimen/dp64"
+            android:layout_height="@dimen/dp120" />
+
+
+    </LinearLayout>
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp5"
+        android:textColor="@color/warm_pink"
+        app:fontname="Muli-Regular.ttf"
+        android:text="@string/invalidCode"
+        android:textSize="@dimen/sp14"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invalidCode" />
+
+    <in.co.eko.fundu.views.customviews.CustomButton
+        android:layout_gravity="center_horizontal"
+        android:text="@string/confirm_small"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sp20"
+        android:layout_marginTop="@dimen/dp25"
+        android:textColor="@color/white"
+        android:id="@+id/btnConfirm"
+        app:fontname="Muli-Regular.ttf"
+        android:background="@drawable/btn_backgrnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp40" />
+
+
+
+
+
+
+</LinearLayout>

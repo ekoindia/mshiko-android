@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.co.eko.fundu.activities.Tutorial">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tutorialinfo">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tut_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeLayout_bottom" />
+
+
+        <TextView
+            android:id="@+id/txt_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp25"
+            android:layout_marginRight="@dimen/dp25"
+            android:layout_marginTop="@dimen/dp15"
+            android:lineSpacingExtra="@dimen/sp5"
+            android:padding="@dimen/dp5"
+            android:text="@string/skip"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp18" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp90"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/tut_dot_one"
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_margin="@dimen/dp5"
+                    android:background="@drawable/tut_circle_solid" />
+
+                <View
+                    android:id="@+id/tut_dot_two"
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_margin="@dimen/dp5"
+                    android:background="@drawable/tut_circle_stroke" />
+
+                <View
+                    android:id="@+id/tut_dot_three"
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_margin="@dimen/dp5"
+                    android:background="@drawable/tut_circle_stroke" />
+
+                <View
+                    android:id="@+id/tut_dot_four"
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_margin="@dimen/dp5"
+                    android:background="@drawable/tut_circle_stroke" />
+
+
+                <View
+                    android:id="@+id/tut_dot_five"
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_margin="@dimen/dp5"
+                    android:visibility="gone"
+                    android:background="@drawable/tut_circle_stroke" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_frwrdarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp30"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_frwrd_arrow" />
+
+
+            <Button
+                android:id="@+id/btn_getstarted"
+                android:layout_width="@dimen/dp250"
+                android:layout_height="@dimen/dp55"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@drawable/green_button_background"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="@dimen/sp20"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/loginoptions"
+        android:visibility="gone"
+        layout="@layout/fragment_auth"></include>
+
+
+
+</RelativeLayout>

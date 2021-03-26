@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginBottom="@dimen/dp100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@color/White"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:id="@+id/markerDetail"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/imageButtonll">
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:clickable="false"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_atm"
+                    android:contentDescription="@string/user_image" />
+
+                <TextView
+                    android:id="@+id/placeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageButton"
+                    android:layout_toRightOf="@+id/imageButton"
+                    android:layout_toLeftOf="@+id/imageButtonClose"
+                    android:textColor="@color/black_38"
+                    android:textSize="@dimen/sp15"
+                    tools:text="A... K..." />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonClose"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:contentDescription="@string/close"
+                        android:padding="10dp"
+                        android:visibility="visible"
+                        android:src="@drawable/ic_action_close" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/navigatell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButtonll"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:padding="@dimen/dp10"
+                    android:background="@drawable/marker_details_button_back"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:id="@+id/nav_icon"
+                        android:padding="@dimen/dp5"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_navigate_atm"
+
+                        />
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:id="@+id/nav_icon_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black_38"
+                        android:text="@string/navigate"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButtonll"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:padding="@dimen/dp10"
+                    android:id="@+id/callll"
+                    android:layout_toRightOf="@+id/navigatell"
+                    android:background="@drawable/marker_details_button_back"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:id="@+id/call"
+                        android:padding="@dimen/dp5"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_call_green"
+
+                        />
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:id="@+id/call_icon_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black_38"
+                        android:text="@string/call"/>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>

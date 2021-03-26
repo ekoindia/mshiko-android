@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+
+
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/textView_referral_title"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:lineSpacingExtra="1sp"
+            android:textColor="@color/topaz_two"
+            android:textSize="@dimen/sp22"
+            app:fontname="Muli-SemiBold.ttf"
+            android:text="@string/titleAbout" />
+
+        <ImageView
+            android:layout_marginBottom="@dimen/dpneg15"
+            android:padding="@dimen/dp10"
+            android:src="@drawable/ic_action_close"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageview_close"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_centerVertical="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+
+        android:layout_below="@+id/linearLayout_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp200"
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/cd_logo"
+        app:srcCompat="@drawable/ic_logo_colored" />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/appName"
+        app:srcCompat="@drawable/app_name_colored" />
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appName"
+        android:id="@+id/textview_version"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="@color/brownish_grey"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="8sp"
+        app:fontname="Muli-Light.ttf"
+        android:visibility="visible" />
+
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:id="@+id/product"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textview_version"
+        android:text="@string/a_product_of"
+        android:textColor="@color/brownish_grey"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="8sp"
+        app:fontname="Muli-Light.ttf"
+        android:visibility="visible" />
+
+    <!--<TextView-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@+id/product"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Eko/-"-->
+        <!--android:textSize="@dimen/sp36"-->
+        <!--android:textColor="@color/eko_logo_color"-->
+        <!--android:textStyle="bold"/>-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_eko_logo"
+        android:layout_below="@+id/product"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp5"/>
+
+   <!-- <in.co.eko.fundu.customfonts.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:text="Supported by"
+        android:textColor="@color/brownish_grey"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="8sp"
+        app:fontname="Muli-Light.ttf"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:srcCompat="@drawable/world_bank_group_logo" />
+-->
+
+
+
+</RelativeLayout>

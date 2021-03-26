@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp190"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_pattern"
+    android:paddingLeft="10dp"
+    android:paddingRight="15dp">
+
+
+    <in.co.eko.fundu.views.CircleImageView
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:id="@+id/circleView"
+        android:layout_width="@dimen/dp70"
+        android:src="@drawable/user_image_white"
+        android:layout_height="@dimen/dp70" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:orientation="horizontal"
+        android:id="@+id/ratingview"
+        android:layout_toRightOf="@+id/circleView"
+        android:layout_alignBottom="@+id/circleView"
+        android:layout_marginLeft="-15dp"
+        android:background="@drawable/green_circle"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            app:srcCompat="@drawable/ic_filled_star_white"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp11"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/myrating"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/textView_credits"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/White"
+        android:textSize="@dimen/sp10"
+        android:visibility="gone"
+        app:fontname="Muli-Light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:padding="@dimen/dp2"
+        android:visibility="gone"
+        android:layout_below="@+id/textView_credits"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/White"
+        android:textSize="@dimen/sp8"
+        android:id="@+id/textview_faq"
+        app:fontname="Muli-Light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/circleView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dp10">
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            app:fontname="Muli-Light.ttf"
+            android:id="@+id/my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sp18"
+            android:text=""
+            android:textColor="@color/white_90"
+            android:textSize="@dimen/sp18"
+            />
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            app:fontname="Muli-Light.ttf"
+            android:id="@+id/my_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp18"
+            android:text=""
+            android:textColor="@color/white_90"
+            android:textSize="@dimen/sp14"
+            />
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            app:fontname="Muli-Light.ttf"
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp18"
+            android:text="@string/your_profile"
+            android:textColor="@color/white_90"
+            android:textSize="@dimen/sp14"
+            />
+
+       <!-- <TextView
+            android:id="@+id/my_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="\u20B9 100"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_sizes_larger"
+
+            />-->
+    </LinearLayout>
+
+
+</RelativeLayout>

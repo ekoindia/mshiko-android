@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    android:clickable="true"
+    android:animateLayoutChanges="true"
+    android:id="@+id/progressOverlay"
+    android:descendantFocusability="beforeDescendants"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp30"
+        android:textColor="@color/colorPrimaryDark"
+        app:fontname="Muli-Regular.ttf"
+        android:textSize="@dimen/sp20"
+        android:text="@string/request_active"/>
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/request_cash_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_margin="@dimen/dp20"
+        android:textColor="@color/text_color_gray"
+        app:fontname="Muli-Regular.ttf"
+        android:gravity="center"
+        android:textSize="@dimen/sp18"
+        android:text="@string/request_active_desc"/>
+
+    <!--<ProgressBar-->
+
+        <!--android:id="@+id/circularProgressbar"-->
+        <!--style="?android:attr/indeterminateProgressStyle"-->
+        <!--android:layout_width="@dimen/dp100"-->
+        <!--android:layout_height="@dimen/dp100"-->
+        <!--android:indeterminate="true"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:progressDrawable="@drawable/circular"-->
+
+        <!--/>-->
+
+    <in.co.eko.fundu.views.CircleProgressBar
+
+        android:id="@+id/progress_outer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        app:line_width="10dp"
+        app:progress_end_color="@color/colorPrimaryDark"
+        app:progress_start_color="@color/colorPrimaryDark"
+        app:progress_stroke_width="3dp"
+        app:style="solid_line"/>
+
+    <in.co.eko.fundu.views.CircleProgressBar
+        android:id="@+id/progress_inner"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_centerInParent="true"
+        app:line_width="10dp"
+        app:progress_end_color="@color/colorPrimaryBlur"
+        app:progress_start_color="@color/colorPrimaryBlur"
+        app:progress_stroke_width="3dp"
+        app:style="solid"/>
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/request_cash_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_color_gray"
+        app:fontname="Muli-Regular.ttf"
+        android:layout_margin="@dimen/dp20"
+        android:gravity="center"
+        android:textSize="@dimen/sp15"
+        android:layout_above="@+id/cancel_active_request"
+        android:text="@string/request_active_info"/>
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/cancel_active_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp30"
+        android:textColor="@color/colorPrimaryDark"
+        app:fontname="Muli-Regular.ttf"
+        android:textSize="@dimen/sp18"
+        android:text="@string/button_cancel"
+        android:visibility="invisible"
+        android:clickable="false"/>
+</RelativeLayout>

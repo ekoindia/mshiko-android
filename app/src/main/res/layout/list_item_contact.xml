@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rowContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.daimajia.swipe.SwipeLayout
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="6dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_icon_rl">
+                <in.co.eko.fundu.views.CircleImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/ic_user_image"
+                    app:border_width="0dp" />
+
+                <TextView
+                    android:textColor="@color/White"
+                    android:id="@+id/user_initial"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="6dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp25"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/addFriendIV"
+                android:layout_toRightOf="@+id/user_icon_rl"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="Hover"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/text_sizes_medium"
+                    app:fontname="Muli-Regular.ttf"
+                    android:singleLine="true"
+                    tools:text="Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum" />
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="Hover"
+                    app:fontname="Muli-Regular.ttf"
+                    android:textSize="@dimen/text_sizes_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/addFriendIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_add_user" />
+        </RelativeLayout>
+
+
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

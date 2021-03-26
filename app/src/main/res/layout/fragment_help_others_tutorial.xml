@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/White"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20">
+
+            <ImageView
+                android:id="@+id/img_getcash"
+                android:layout_width="223dp"
+                android:layout_height="217dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp50"
+                app:srcCompat="@drawable/ic_hlpo"/>
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/txt_helpothersTitleOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_getcash"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp15"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/sp5"
+                android:singleLine="true"
+                android:text="@string/helpothersTitleOne"
+                android:textColor="@color/topaz_two"
+                android:textSize="@dimen/sp22"
+                app:fontname="Muli-SemiBold.ttf"/>
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/txt_helpothersTilteTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_helpothersTitleOne"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sp20"
+                android:gravity="center"
+                android:text="@string/helpothersTilteTwo"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp18"
+                app:fontname="Muli-Regular.ttf"/>
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/txt_helpothersTilteThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_helpothersTilteTwo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp12"
+                android:gravity="center"
+                android:text="@string/helpothersTilteThree"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp14"
+                app:fontname="Muli-Light.ttf"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

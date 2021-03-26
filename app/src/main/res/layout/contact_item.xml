@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp70"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <RelativeLayout
+        android:layout_margin="@dimen/dp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_icon_rl">
+
+    <in.co.eko.fundu.views.CircleImageView
+        android:id="@+id/user_image"
+        android:layout_width="@dimen/dp55"
+        android:layout_height="@dimen/dp55"
+        android:layout_centerVertical="true"
+        android:layout_margin="6dp"
+        android:src="@drawable/ic_user_image"
+        app:border_width="0dp" />
+
+    <TextView
+        android:textColor="@color/White"
+        android:id="@+id/user_initial"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:textSize="@dimen/sp25"
+        android:visibility="gone"
+         />
+    </RelativeLayout>
+
+
+    <CheckBox
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/selectContact"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:visibility="gone"
+        android:id="@+id/textView_invited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:lineSpacingExtra="@dimen/dpneg1"
+        android:text="@string/already_invited"
+        android:textColor="@color/brownish_grey"
+        android:textSize="@dimen/sp10"
+        app:fontname="Muli-Regular.ttf" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/selectContact"
+        android:layout_toRightOf="@+id/user_icon_rl"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Hover"
+            android:textSize="@dimen/sp16"
+            android:layout_centerHorizontal="true"
+            app:fontname="Muli-SemiBold.ttf"
+            android:singleLine="true"
+            android:textColor="@color/brownish_grey"
+
+            tools:text="Lorem Ipsum" />
+
+       <in.co.eko.fundu.views.customviews.CustomTextView
+            android:textColor="@color/brownish_grey"
+            app:fontname="Muli-Regular.ttf"
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Hover"
+
+            android:textSize="@dimen/text_sizes_small" />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_three"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+</RelativeLayout>

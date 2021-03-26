@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.co.eko.fundu.activities.Feedback"
+    android:background="@color/white"
+    tools:showIn="@layout/activity_feedback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            >
+
+            <ImageView
+                android:padding="@dimen/dp10"
+                android:id="@+id/imageview_back"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_feedback"
+                android:id="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:lineSpacingExtra="1sp"
+                android:textColor="@color/topaz_two"
+                android:textSize="@dimen/sp22"
+                app:fontname="Muli-SemiBold.ttf"/>
+        </RelativeLayout>
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp30"
+            android:textSize="@dimen/sp14"
+            app:fontname="Muli-Regular.ttf"
+            android:gravity="center_horizontal"
+            android:textColor="@color/brownish_grey"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/issue"
+            android:id="@+id/issuewith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp30"
+            android:textSize="@dimen/sp14"
+            app:fontname="Muli-Regular.ttf"
+            android:gravity="center_horizontal"
+            android:textColor="@color/brownish_grey"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/issue"
+            android:id="@+id/fromemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <in.co.eko.fundu.views.customviews.CustomEditText
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp150"
+            android:maxLength="160"
+            android:layout_margin="@dimen/dp20"
+            android:padding="@dimen/dp10"
+            app:fontname="Muli-Regular.ttf"
+            android:textSize="@dimen/sp15"
+            android:background="@drawable/feedback_edittext_background"
+            android:gravity="top"
+            android:maxLines="6"/>
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/limit"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp14"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_gravity="right"
+            app:fontname="Muli-Regular.ttf"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:id="@+id/checkboxll"
+            android:layout_marginTop="@dimen/dp20">
+
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:checked="true"
+                android:button="@drawable/checkbox_selector"
+                android:id="@+id/includescreenshot"/>
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/include_screenshot"
+                android:textSize="@dimen/sp14"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_gravity="center_vertical"
+                app:fontname="Muli-Regular.ttf"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp10"
+            android:id="@+id/screenshotcaptured"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp160"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_gravity="center_vertical"
+            />
+
+
+        <in.co.eko.fundu.views.customviews.CustomButton
+            android:id="@+id/sendButton"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/dp250"
+            android:layout_height="@dimen/dp55"
+            android:gravity="center"
+            android:textSize="@dimen/sp20"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/green_button_selector"
+            android:paddingBottom="@dimen/dp7"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:paddingTop="@dimen/dp7"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            app:fontname="Muli-Regular.ttf" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

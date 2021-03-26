@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="window_background">#FFF5F5F5</color>
+    <!--<color name="colorPrimary">#339933</color>-->
+    <!-- <color name="colorPrimary">#6455e9</color>-->
+    <!--<color name="colorPrimary">#4286F3</color>-->
+   <!-- <color name="colorPrimaryDark">#000000</color>-->
+    <!-- <color name="colorPrimaryDark">#5345d4</color>-->
+
+
+    <color name="colorPrimary">#3bddd3</color>
+    <color name="colorPrimaryDark">#0db0a7</color>
+    <color name="colorAccent">#11cec2</color>
+    <color name="colorPrimaryBlur">#603bddd3</color>
+    <color name="topaz_two">#11cec2</color>
+    <color name="white_six">#ededed</color>
+    <color name="White">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_two">#373737</color>
+    <color name="black_three">#333333</color>
+    <color name="BlackShadeOne">#393939</color>
+    <color name="Off_White">#FAFAFA</color>
+    <color name="Black">#000000</color>
+    <color name="black87">#de000000</color>
+    <color name="Red">#ff0000</color>
+    <color name="GreenOverlayColor">@color/colorPrimaryDark</color>
+    <color name="Transparent">#00000000</color>
+    <color name="Dim">#44000000</color>
+    <color name="ColorRed">#D11111</color>
+    <color name="white_90">#e6ffffff</color>
+    <color name="bottom_border">#d2d2d2</color>
+    <color name="text_color">#343131</color>
+    <color name="tranlusent">#4D000000</color>
+    <color name="tranlusentTwo">#00000000</color>
+    <color name="splash_text_color">#9ea1a4</color>
+    <color name="text_color_gray">#838383</color>
+    <color name="purpley_grey">#9b9b9b</color>
+    <color name="TitleColor">#3e3f3b</color>
+
+    <color name="ToolbarTitleColor">#ffffff</color>
+    <color name="DividerColor">#dcdcdc</color>
+    <color name="NavItemColor">#3e3f3b</color>
+    <color name="BlackOverlay">#55000000</color>
+    <color name="whiteOverlay">#aaffffff</color>
+    <color name="textColorLightGray">#757575</color>
+    <color name="disabled_material_light">#24000000</color>
+    <color name="topaz">#0db0a7</color>
+    <color name="aqua_marine">#3bddd3</color>
+    <color name="brownish_grey">#5d5d5d</color>
+    <color name="warm_grey_three">#989898</color>
+    <color name="warm_grey_two">#767676</color>
+    <color name="white_five">#f8f8f8</color>
+    <color name="pale_peach">#ffda9c</color>
+    <color name="greyish">#b6b6b6</color>
+    <color name="greyish_brown">#565656</color>
+    <color name="pastel_purple">#b9aeff</color>
+    <color name="pistachio">#c7fb8c</color>
+    <color name="rosa">#ff9ba8</color>
+    <color name="light_magenta">#e57bfb</color>
+    <color name="black_38">#61000000</color>
+
+    <color name="charcoal_grey">#4d4d4e</color>
+    <color name="warm_pink">#f95569</color>
+    <color name="white_two">#e7e7e7</color>
+    <color name="warm_grey">#757575</color>
+    <color name="white_three">#dcdcdc</color>
+    <color name="warm_pink_two">#ff4081</color>
+    <color name="mid_green">#4caf50</color>
+    <color name="squash">#f5a623</color>
+
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="holo_red_transparent">#73EB0A0A</color>
+    <!-- A Holo shade of purple -->
+    <!-- A light Holo shade of orange -->
+
+
+    <color name="pinkish_grey_87">#debebebe</color>
+    <color name="warm_grey_four">#919191</color>
+
+    <color name="report_issue_color">#f5a623</color>
+
+    <color name="eko_logo_color">#96C024</color>
+
+    <array name="contacts_color">
+        <item>@color/colorPrimary</item>
+        <item>@color/pastel_purple</item>
+        <item>@color/pale_peach</item>
+        <item>@color/pistachio</item>
+        <item>@color/warm_pink_two</item>
+        <item>@color/mid_green</item>
+        <item>@color/topaz_two</item>
+        <item>@color/warm_pink</item>
+        <item>@color/brownish_grey</item>
+        <item>@color/aqua_marine</item>
+        <item>@color/light_magenta</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/rosa</item>
+        <item>@color/topaz</item>
+        <!--<item>@color/light_lime</item>-->
+
+    </array>
+
+</resources>

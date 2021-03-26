@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewEmailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    tools:showIn="@layout/layout_link_account">
+
+    <ImageView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:src="@drawable/ic_user_profile_mail" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/activity_link_account_hint_email"
+        android:inputType="textEmailAddress" />
+
+    <Spinner
+        android:id="@+id/emailSP"
+        style="@style/Widget.Holo.TextView.SpinnerItem"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:entries="@array/email_type" />
+
+</LinearLayout>

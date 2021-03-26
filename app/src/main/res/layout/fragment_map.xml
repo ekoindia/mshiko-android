@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Transparent">
+
+
+
+
+
+    <in.co.eko.fundu.views.slidinguppanel.SlidingUpPanelLayout
+        android:background="@color/Transparent"
+        android:id="@+id/gpsSlidePanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:umanoPanelHeight="0dp"
+        app:umanoOverlay="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <in.co.eko.fundu.views.slidinguppanel.SlidingUpPanelLayout
+                android:background="@color/Transparent"
+                android:id="@+id/slidePanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:umanoPanelHeight="0dp"
+                android:gravity="bottom">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/googleMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RecyclerViewMap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ECEFF1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:scrollbars="none" />
+                    </FrameLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp150"
+                        android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp60"
+                        app:srcCompat="@drawable/ic_location_pin"
+                        />
+                    </RelativeLayout>
+
+
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_need_cash"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="16dp"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/ic_gps" />
+
+                    <RelativeLayout
+                        android:id="@+id/tv_need_cash"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/abc_action_bar_default_height_material"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/btn_backgrnd"
+                        android:visibility="visible"
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20">
+                        <in.co.eko.fundu.views.customviews.CustomTextView
+                            app:fontname="Muli-Regular.ttf"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/get_cash"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/sp20" />
+
+
+                        <ImageView
+                            android:layout_marginRight="@dimen/dp20"
+                            android:src="@drawable/fill_11"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <include layout="@layout/map_marker_details" />
+            </in.co.eko.fundu.views.slidinguppanel.SlidingUpPanelLayout>
+
+
+            <in.co.eko.fundu.views.ProgressOverlay
+                android:id="@+id/progressOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </in.co.eko.fundu.views.ProgressOverlay>
+
+        </RelativeLayout>
+        <include
+            android:id="@+id/gpsAuthenticationPopup"
+
+            layout="@layout/gps_authentication_popup" />
+    </in.co.eko.fundu.views.slidinguppanel.SlidingUpPanelLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_location"
+        android:textSize="@dimen/sp20"
+        android:visibility="gone"
+        android:id="@+id/mylocation"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/requested_location"
+        android:id="@+id/requestedlocation"
+        android:textSize="@dimen/sp20"
+        android:visibility="gone"
+        android:layout_below="@id/mylocation"/>
+
+</RelativeLayout>

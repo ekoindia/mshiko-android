@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/activity_vertical_margin">
+    <ImageView
+        android:id="@+id/locationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/locationImage"
+        android:text="@string/gps_popup_title"
+        android:textColor="@color/White"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/gps_popup_subtitle"
+        android:textColor="@color/White"
+        android:id="@+id/subtitle"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/activateGPSButton"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_button_background"
+        android:text="@string/gps_activate_button"
+        android:layout_below="@id/subtitle"
+        android:textColor="@color/colorPrimary"
+        android:filterTouchesWhenObscured="true" />
+    <ImageView
+        android:id="@+id/close_popup"
+        android:contentDescription="@string/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close_white"/>
+
+   <!-- <TextView
+        android:id="@+id/not_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/activateGPSButton"
+        android:text="@string/not_now"
+        android:textAllCaps="true"
+        android:textColor="@color/White"
+        android:textSize="12sp" />-->
+
+
+
+
+</RelativeLayout>

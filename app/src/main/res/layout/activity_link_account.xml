@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    tools:context="in.co.eko.fundu.activities.LinkAccountActivity">
+
+
+    <!--<include
+        android:id="@+id/enterAccount"
+        android:visibility="gone"
+        layout="@layout/view_accounts" />
+
+    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/viewAccountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        tools:showIn="@layout/layout_link_account">
+
+        <ImageView
+            android:id="@+id/bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@drawable/ic_user_profile_bank"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/accountNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:digits="0987654321-"
+                android:ems="10"
+                android:hint="@string/activity_link_account_hint_acc_number"
+                android:inputType="phone"
+                android:focusable="true"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ifscET"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:hint="@string/activity_link_account_ifsc_code"
+                    android:maxLength="19"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/bankNameSP"
+                    style="@style/Widget.Holo.TextView.SpinnerItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:clipToPadding="true"
+                    android:entries="@array/bank_type" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>-->
+    <LinearLayout
+        android:visibility="gone"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout_enter_acc_details"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="in.co.eko.fundu.fragments.EnterBankAccountFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="horizontal">
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/enter_acc_detail"
+                android:textColor="@color/topaz_two"
+                android:textSize="@dimen/sp23"
+                app:fontname="Muli-SemiBold.ttf" />
+
+            <ImageView
+                android:layout_marginBottom="@dimen/dpneg15"
+
+                android:src="@drawable/ic_action_close"
+                android:layout_centerVertical="true"
+                android:id="@+id/imageview_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp5"
+                />
+
+
+        </RelativeLayout>
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/textViewMessage"
+            android:layout_below="@+id/relativeLayoutHeader"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/brownish_grey"
+            app:fontname="Muli-SemiBold.ttf"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enterAccountDetails"
+            />
+        <LinearLayout
+            android:id="@+id/linearLayoutAccountNumber"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_below="@+id/bank"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+
+                android:dropDownVerticalOffset="-50dp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:id="@+id/bankNameSP"
+                style="@style/Widget.Holo.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp13"
+                android:clipToPadding="true"
+                android:entries="@array/bank_type" />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp60">
+
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:background="@null"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:maxLength="19"
+                    android:editable="false"
+                    android:maxEms="10"
+                    android:gravity="center"
+                    app:fontname="Muli-Regular.ttf"
+                    android:capitalize="characters"
+                    android:textAllCaps="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp18"
+                    android:hint="@string/icic"
+                    android:imeOptions="actionDone"
+                    android:textColorHint="@color/warm_grey"
+                    android:textColor="@color/brownish_grey"
+                    android:id="@+id/ifscETFixed"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp60" />
+
+
+                <in.co.eko.fundu.views.customviews.CustomEditText
+                    android:background="@null"
+                    android:layout_weight="1.6"
+                    android:ems="10"
+                    android:maxLength="8"
+                    android:maxEms="8"
+                    app:fontname="Muli-Regular.ttf"
+                    android:capitalize="characters"
+                    android:textAllCaps="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp18"
+                    android:hint=""
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:textColorHint="@color/charcoal_grey"
+                    android:textColor="@color/brownish_grey"
+                    android:id="@+id/ifscET"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp60" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="@dimen/dpneg7"
+                android:background="@color/topaz_two"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"/>
+
+
+            <in.co.eko.fundu.views.customviews.CustomEditText
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:hint="@string/enter_acc_no"
+                android:ems="15"
+                app:fontname="Muli-Regular.ttf"
+                android:maxLength="15"
+                android:focusable="true"
+                android:maxEms="10"
+                android:paddingBottom="@dimen/dp10"
+                android:singleLine="true"
+                android:textSize="@dimen/sp18"
+                android:layout_marginTop="@dimen/dp10"
+                android:backgroundTint="@color/topaz_two"
+                android:textColorHint="@color/warm_grey"
+                android:textColor="@color/brownish_grey"
+                android:id="@+id/accountNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp60" />
+
+
+            <in.co.eko.fundu.views.customviews.CustomEditText
+                android:inputType="numberPassword"
+                android:imeOptions="actionNext"
+                android:hint="@string/confirm_acc_no"
+                android:ems="15"
+                app:fontname="Muli-Regular.ttf"
+                android:maxLength="15"
+                android:focusable="true"
+                android:maxEms="10"
+                android:paddingBottom="@dimen/dp10"
+                android:singleLine="true"
+                android:textSize="@dimen/sp18"
+                android:backgroundTint="@color/topaz_two"
+                android:textColorHint="@color/warm_grey"
+                android:textColor="@color/brownish_grey"
+                android:id="@+id/confirmAccNum"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp60" />
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                app:fontname="Muli-Regular.ttf"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/sp14"
+                android:text="@string/enetrAmountInfo"
+                android:textColor="@color/warm_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <in.co.eko.fundu.views.customviews.CustomButton
+                app:fontname="Muli-SemiBold.ttf"
+                android:id="@+id/btn_confirm"
+                android:layout_width="@dimen/dp250"
+                android:layout_height="@dimen/dp50"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/btn_backgrnd"
+                android:filterTouchesWhenObscured="true"
+                android:text="@string/confirmLink"
+                android:textColor="@color/White"
+                android:textSize="@dimen/sp20"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/linearLayout_existing_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp10"
+            android:id="@+id/relativemain_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_margin="@dimen/dp10"
+                android:visibility="visible"
+                android:padding="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_back"
+                android:id="@+id/imageview_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="1sp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/selectAccount"
+                android:textColor="@color/topaz_two"
+                android:textSize="@dimen/sp22"
+                app:fontname="Muli-SemiBold.ttf" />
+
+
+
+        </RelativeLayout>
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+
+            android:id="@+id/textViewMessageAccount"
+            android:layout_below="@+id/relativemain_layout"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/brownish_grey"
+            app:fontname="Muli-SemiBold.ttf"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/selectBankInfo"
+            />
+
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:layout_below="@+id/textViewMessageAccount"
+            android:clickable="false"
+
+            android:layout_marginTop="@dimen/dp20"
+            android:id="@+id/RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+
+
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/RecyclerView"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                app:fontname="Muli-SemiBold.ttf"
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/warm_grey"
+                android:textSize="@dimen/sp16"
+                />
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_gravity="center_horizontal"
+                app:fontname="Muli-SemiBold.ttf"
+                android:id="@+id/btn_add_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addAccount"
+                android:textColor="@color/warm_grey"
+                android:textSize="@dimen/sp14"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<include
+
+        android:visibility="gone"
+        layout="@layout/layout_existing_account_list" />-->
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/below_shadow" />
+</RelativeLayout>

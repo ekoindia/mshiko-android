@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="in.co.eko.fundu.activities.CashRequestAction">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/pair_contact_main_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/cash_request"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp22"
+                app:fontname="Muli-SemiBold.ttf"
+                />
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/cash_request_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="@string/some_desc"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/sp14"
+                app:fontname="Muli-Regular.ttf"/>
+
+            <in.co.eko.fundu.views.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp20"
+                android:src="@drawable/ic_user_image"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/ratingView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/dp10"
+                        android:layout_height="@dimen/dp10"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_rating"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomTextView
+                        android:id="@+id/user_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp3"
+                        android:text="4.5"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/sp13"
+                        app:fontname="Muli-Regular.ttf"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:background="@color/Black"
+                    />
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:id="@+id/howfar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/sp10"
+                    app:fontname="Muli-Regular.ttf"/>
+
+            </LinearLayout>
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp20"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/sp25"
+                app:fontname="Muli-Regular.ttf"/>
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/incentive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/black"
+                app:fontname="Muli-Regular.ttf"/>
+
+            <!--<ProgressBar
+
+                android:id="@+id/circularProgressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="@dimen/dp150"
+                android:indeterminate="false"
+                android:max="150"
+                android:progress="2"
+                android:layout_gravity="center_horizontal"
+                android:progressDrawable="@drawable/circular"
+                android:secondaryProgress="150"
+                android:layout_marginTop="@dimen/dp20"/>-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp5">
+
+                <in.co.eko.fundu.views.CircleProgressBar
+
+                    android:id="@+id/progress_outer"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    app:line_width="10dp"
+                    app:progress_end_color="@color/holo_red_transparent"
+                    app:progress_start_color="@color/holo_red_dark"
+                    app:progress_stroke_width="3dp"
+                    app:style="solid_line"/>
+
+                <in.co.eko.fundu.views.CircleProgressBar
+                    android:id="@+id/progress_inner"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    android:layout_centerInParent="true"
+                    app:line_width="10dp"
+                    app:progress_end_color="@color/holo_red_transparent"
+                    app:progress_start_color="@color/holo_red_transparent"
+                    app:progress_stroke_width="3dp"
+                    app:style="solid"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+
+                <in.co.eko.fundu.views.customviews.CustomButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/btn_backgrnd"
+                    android:clickable="true"
+                    android:onClick="onAcceptClick"
+                    android:text="@string/accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/sp20"
+                    app:fontname="Muli-Light.ttf"/>
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:id="@+id/dismiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onDismissClick"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/dismiss"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="@dimen/sp15"
+                    app:fontname="Muli-Regular.ttf"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60ffffff"
+        android:clickable="false"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

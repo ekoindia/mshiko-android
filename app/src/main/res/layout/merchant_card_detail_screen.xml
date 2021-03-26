@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/lin_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/enter_acc_detail"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_below="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/select_bank_name" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/shadow_background"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/bank_name" />
+
+                <Spinner
+                    android:id="@+id/spinner_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_below="@id/bank"
+                    android:layout_marginBottom="0dp"
+                    android:textDirection="ltr"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"></Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/spinner_bank"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_below="@id/spinner_bank"
+                    android:id="@+id/tvacn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/activity_link_account_hint_acc_number" />
+
+                <EditText
+                    android:id="@+id/account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvacn"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:maxLines="1"
+                    android:ems="13"
+                    android:singleLine="true"
+                    android:hint="@string/xxxxxxxx"
+                    android:digits="QWERTYUIOPLKJHGFDSAZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890"
+                    android:imeOptions="actionNext"
+                    android:maxLength="22" />
+
+                <TextView
+                    android:id="@+id/re"
+                    android:layout_below="@+id/account_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/re_enter_acc_no" />
+
+                <EditText
+                    android:id="@+id/reenteraccount_number"
+                    android:layout_below="@+id/re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ems="13"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:digits="QWERTYUIOPLKJHGFDSAZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890"
+                    android:hint="@string/xxxxxxxx"
+                    android:imeOptions="actionDone"
+                    android:maxLength="22" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/ButtonStyle"
+            android:layout_below="@+id/lin_main"
+            android:layout_width="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/green_button_selector"
+            android:text="@string/submit"
+            android:filterTouchesWhenObscured="true" />
+    </RelativeLayout>
+</ScrollView>

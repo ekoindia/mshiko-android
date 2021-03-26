@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Transparent"
+    tools:context="in.co.eko.fundu.activities.upi.YesBankUPIClient">
+
+    <ProgressBar
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:indeterminate="true"
+        style="?android:attr/indeterminateProgressStyle"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

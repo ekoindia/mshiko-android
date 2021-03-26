@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="in.co.eko.fundu.activities.GiveCash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/title_view_transactions"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:paddingLeft="@dimen/dp30"
+                    android:paddingRight="@dimen/dp30"
+                    android:id="@+id/progress_bar"
+                    android:layout_below="@+id/titleView"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/white_three" />
+
+                    <include layout="@layout/progressbar2dots"/>
+                    <include layout="@layout/progressbar3dots"/>
+
+                </RelativeLayout>
+
+
+
+                <include layout="@layout/user_info_a"></include>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@color/white_two"/>
+
+
+                <in.co.eko.fundu.views.customviews.CustomEditText
+                    android:id="@+id/provider_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/meeting_instructions"
+                    android:textSize="@dimen/sp12"
+                    android:singleLine="true"
+
+                    android:background="@null"
+                    android:paddingLeft="@dimen/dp10"
+                    android:visibility="gone"
+                    app:fontname="Muli-Regular.ttf"/>
+
+            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/cancelTransaction"
+                android:id="@+id/infomationrl"
+                android:visibility="visible">
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="com.techmobia.googlemapscreen.MapsActivity" />
+
+            </RelativeLayout>
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:padding="@dimen/dp10"
+                app:fontname="Muli-SemiBold.ttf"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/cancelTransaction"
+                android:text="@string/cancel_transaction"
+                android:textColor="@color/black_38" />
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/trancation_success"
+                android:visibility="gone">
+                <include layout="@layout/transaction_success"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/transactionCode"
+                android:visibility="gone">
+
+                <include
+                    layout="@layout/givecash_enter_tranx_code"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <include layout="@layout/feedback_botton"></include>
+
+</RelativeLayout>

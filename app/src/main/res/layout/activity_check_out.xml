@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+        <ImageView
+            app:srcCompat="@drawable/ic_back"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_centerVertical="true"
+            android:id="@+id/back"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:textSize="@dimen/sp22"
+            android:textColor="@color/topaz_two"
+            app:fontname="Muli-SemiBold.ttf"
+            android:id="@+id/textView"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enter_card_no"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/textViewMessage"
+        android:layout_below="@+id/relativeLayoutHeader"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/brownish_grey"
+        app:fontname="Muli-SemiBold.ttf"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/enter_card_details"
+        />
+
+
+
+         <RelativeLayout
+             android:layout_below="@+id/textViewMessage"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+       <RelativeLayout
+
+           android:id="@+id/fragment_container"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp240" />
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/viewpager"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_below="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        />
+
+       <in.co.eko.fundu.views.customviews.CustomButton
+           android:layout_marginTop="@dimen/dp20"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/btn_backgrnd"
+           android:text="@string/next"
+           android:textAllCaps="true"
+           android:layout_below="@+id/viewpager"
+           android:layout_marginBottom="@dimen/dp20"
+           android:layout_centerHorizontal="true"
+           android:textColor="@color/White"
+           android:id="@+id/btnNext"
+
+           android:filterTouchesWhenObscured="true" />
+         </RelativeLayout>
+
+
+
+</RelativeLayout>
+       </ScrollView>
+
+
+
+
+

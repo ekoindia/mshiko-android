@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/needCash"
+        android:clickable="true"
+        android:background="@color/White"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_need_cash"
+            android:textSize="@dimen/sp20"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/title_select_amount"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/subtractButton"
+                android:background="@color/White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_substract" />
+
+            <EditText
+                android:id="@+id/amountBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:cursorVisible="true"
+                style="@style/EditTextStyle"
+                android:gravity="center"
+                android:maxLength="5"
+                android:inputType="number"
+                android:text="@string/digit100"
+                android:singleLine="true"
+                android:textSize="36sp" />
+
+            <ImageButton
+                android:background="@color/White"
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+
+        <!--<in.co.eko.fundu.views.ComboSeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:myColor="@color/colorPrimary"
+                        app:unSelectedLine="@color/DividerColor"
+                        app:textSize="14sp"
+                        android:id="@+id/seekBar" />-->
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/amountSelector"
+            android:max="9"
+            android:progress="1"
+            android:duplicateParentState="false"
+            android:layout_marginTop="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/amountstarts"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/amountend"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!--<SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seekBar2" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/title_convenience_pay"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioOne"
+                        android:layout_width="wrap_content"
+                        android:checked="true"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="2"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs."
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/info_need_cash"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/ColorRed" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/green_button_background"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/button_submit"
+            android:textColor="@color/White"
+            android:filterTouchesWhenObscured="true"/>
+
+    </LinearLayout>
+</FrameLayout>

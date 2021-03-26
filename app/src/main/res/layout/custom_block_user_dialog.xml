@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/shadow_background"
+    android:gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Block Lorem Ipsum?"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/textView28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nunc egestas, ligula non posuere rhoncus, odio diam condimentum elit, sed egestas risus dolor eu erat."
+        android:id="@+id/textView29" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:spinnerMode="dropdown"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:entries="@array/block_type"
+        android:id="@+id/spinner2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_height="38dp"
+        android:text="Block Lorem Ipsum"
+        android:textColor="@color/White"
+        android:background="@drawable/green_button_background"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:filterTouchesWhenObscured="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="38dp"
+        android:text="@string/button_cancel"
+        android:textSize="12sp"
+        android:background="@null"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/button4"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:filterTouchesWhenObscured="true"/>
+
+</LinearLayout>

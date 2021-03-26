@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp10"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_icon_rl">
+        <in.co.eko.fundu.views.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_user_image"
+            app:border_width="0dp" />
+
+        <TextView
+            android:textColor="@color/White"
+            android:id="@+id/user_initial"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:textSize="@dimen/sp25"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:layout_marginTop="@dimen/dp10"
+        android:textColor="@color/brownish_grey"
+        app:fontname="Muli-SemiBold.ttf"
+        android:layout_marginLeft="@dimen/dp5"
+        android:id="@+id/textview_name"
+        android:textSize="@dimen/sp12"
+        android:text=""
+        android:maxLines="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

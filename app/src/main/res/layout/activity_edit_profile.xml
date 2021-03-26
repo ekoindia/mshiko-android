@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.co.eko.fundu.activities.EditProfileActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        app:navigationIcon="@drawable/ic_check_icon"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="Lorem Ipsum"
+        app:titleTextAppearance="@style/ToolbarTextAppearance" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="5dp"
+        android:background="@drawable/below_shadow"
+        android:id="@+id/view" />
+
+
+</RelativeLayout>

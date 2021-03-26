@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/brownish_grey"
+        app:fontname="Muli-Light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:text="@string/disable_request"
+        android:id="@+id/tv_item_name" />
+
+    <Spinner
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_gravity="right|center_vertical"
+        android:entries="@array/days"
+
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:spinnerMode="dropdown" >
+
+     </Spinner>
+
+    <View
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/dp10"
+        android:visibility="visible"
+        android:id="@+id/viewabout"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_three"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+
+</FrameLayout>

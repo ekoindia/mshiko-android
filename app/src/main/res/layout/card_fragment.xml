@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:isScrollContainer="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+        <ImageView
+            app:srcCompat="@drawable/ic_back"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_centerVertical="true"
+            android:id="@+id/back"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:textSize="@dimen/sp22"
+            android:textColor="@color/topaz_two"
+            app:fontname="Muli-SemiBold.ttf"
+            android:id="@+id/textView"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enter_card_no"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/textViewMessage"
+        android:layout_below="@+id/relativeLayoutHeader"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/brownish_grey"
+        app:fontname="Muli-SemiBold.ttf"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/enter_card_details"
+        />
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout_card"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp250">
+
+        <LinearLayout
+            android:background="@drawable/ic_card_main"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageview_bank"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/ic_bank_logo"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <ImageView
+                android:layout_below="@+id/imageview_bank"
+                app:srcCompat="@drawable/ic_chip"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp5"
+                android:id="@+id/linearLayout_card"
+                android:layout_centerInParent="true"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+
+                android:layout_margin="@dimen/dp10"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText1"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="1"
+                        app:fontname="OCR A Std.ttf"
+                        android:ems="1"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/Black"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText2"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="2"
+                        android:textColor="@color/Black"
+                        android:ems="1"
+                        app:fontname="OCR A Std.ttf"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText3"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="3"
+                        app:fontname="OCR A Std.ttf"
+                        android:textColor="@color/Black"
+                        android:ems="1"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText4"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="4"
+                        app:fontname="OCR A Std.ttf"
+                        android:textColor="@color/Black"
+                        android:ems="1"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_height="wrap_content">
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText5"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="1"
+                        app:fontname="OCR A Std.ttf"
+                        android:ems="1"
+                        android:textColor="@color/Black"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText6"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="2"
+                        android:textColor="@color/Black"
+                        android:ems="1"
+                        app:fontname="OCR A Std.ttf"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText7"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="3"
+                        app:fontname="OCR A Std.ttf"
+                        android:textColor="@color/Black"
+                        android:ems="1"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText8"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="4"
+                        app:fontname="OCR A Std.ttf"
+                        android:textColor="@color/Black"
+                        android:ems="1"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText9"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="1"
+                        android:ems="1"
+                        app:fontname="OCR A Std.ttf"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:textColor="@color/Black"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText10"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="2"
+                        android:textColor="@color/Black"
+                        android:ems="1"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        app:fontname="OCR A Std.ttf"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText11"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="3"
+                        android:textColor="@color/Black"
+                        android:ems="1"
+                        app:fontname="OCR A Std.ttf"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+                        android:layout_weight="1"/>
+
+                    <in.co.eko.fundu.views.customviews.CustomEditText
+                        android:id="@+id/editText12"
+                        android:background="@drawable/code_letter_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="4"
+                        android:ems="1"
+                        app:fontname="OCR A Std.ttf"
+                        android:textColor="@color/Black"
+                        android:maxLength="1"
+                        android:maxEms="1"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp14"
+
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+             <LinearLayout
+                 android:layout_marginRight="@dimen/dp10"
+                 android:layout_marginLeft="@dimen/dp10"
+                 android:orientation="horizontal"
+                 android:weightSum="3"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/dp30">
+
+                 <LinearLayout
+                     android:id="@+id/linearLayout4"
+                     android:layout_weight="1"
+                     android:orientation="horizontal"
+                     android:weightSum="4"
+                     android:layout_width="0dp"
+
+                     android:layout_height="wrap_content">
+                     <in.co.eko.fundu.views.customviews.CustomEditText
+                         android:id="@+id/editText13"
+                         android:background="@drawable/code_letter_back"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:hint="1"
+                         android:textColor="@color/Black"
+                         android:ems="1"
+                         app:fontname="OCR A Std.ttf"
+                         android:maxLength="1"
+                         android:maxEms="1"
+                         android:inputType="number"
+                         android:imeOptions="actionNext"
+                         android:layout_marginRight="@dimen/dp3"
+                         android:gravity="center"
+                         android:textSize="@dimen/sp14"
+                         android:layout_weight="1"/>
+
+                     <in.co.eko.fundu.views.customviews.CustomEditText
+                         android:id="@+id/editText14"
+                         android:background="@drawable/code_letter_back"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:hint="2"
+                         android:ems="1"
+                         app:fontname="OCR A Std.ttf"
+                         android:maxLength="1"
+                         android:maxEms="1"
+                         android:textColor="@color/Black"
+                         android:inputType="number"
+                         android:imeOptions="actionNext"
+                         android:layout_marginRight="@dimen/dp3"
+                         android:gravity="center"
+                         android:textSize="@dimen/sp14"
+                         android:layout_weight="1"/>
+
+                     <in.co.eko.fundu.views.customviews.CustomEditText
+                         android:id="@+id/editText15"
+                         android:background="@drawable/code_letter_back"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:hint="3"
+                         android:ems="1"
+                         app:fontname="OCR A Std.ttf"
+                         android:maxLength="1"
+                         android:maxEms="1"
+                         android:textColor="@color/Black"
+                         android:inputType="number"
+                         android:imeOptions="actionNext"
+                         android:layout_marginRight="@dimen/dp3"
+                         android:gravity="center"
+                         android:textSize="@dimen/sp14"
+                         android:layout_weight="1"/>
+
+                     <in.co.eko.fundu.views.customviews.CustomEditText
+                         android:id="@+id/editText16"
+                         android:background="@drawable/code_letter_back"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:hint="4"
+                         app:fontname="OCR A Std.ttf"
+                         android:textColor="@color/Black"
+                         android:ems="1"
+                         android:maxLength="1"
+                         android:maxEms="1"
+                         android:inputType="number"
+                         android:imeOptions="actionNext"
+                         android:gravity="center"
+                         android:textSize="@dimen/sp14"
+                         android:layout_weight="1"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/edittext_expiry"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_below="@+id/linearLayout_card"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textSize="@dimen/sp10"
+            android:textColor="@color/warm_grey_three"
+            android:text="@string/expiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/edittext_expiry"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <in.co.eko.fundu.views.customviews.CustomEditText
+                    android:id="@+id/editText_Month1"
+                    android:background="@drawable/code_letter_back"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp30"
+                    android:hint="3"
+                    app:fontname="OCR A Std.ttf"
+                    android:textColor="@color/Black"
+                    android:ems="1"
+                    android:maxLength="1"
+                    android:maxEms="1"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:layout_marginRight="@dimen/dp2"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp14"
+                    />
+
+                <in.co.eko.fundu.views.customviews.CustomEditText
+                    android:id="@+id/editText_Month2"
+                    android:background="@drawable/code_letter_back"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp30"
+                    android:hint="4"
+                    android:textColor="@color/Black"
+                    android:ems="1"
+                    app:fontname="OCR A Std.ttf"
+                    android:maxLength="1"
+                    android:maxEms="1"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp14"
+                    android:layout_weight="1"/>
+
+                <TextView
+
+
+                    android:layout_width="@dimen/dp16"
+                    android:layout_height="match_parent"
+                    android:text="/"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp12"
+                    android:layout_weight="1"/>
+
+                <in.co.eko.fundu.views.customviews.CustomEditText
+                    android:id="@+id/editText_Year1"
+                    android:background="@drawable/code_letter_back"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp30"
+                    android:hint="4"
+                    android:maxLength="1"
+                    android:textColor="@color/Black"
+                    android:maxEms="1"
+                    app:fontname="OCR A Std.ttf"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/dp2"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp14"
+                    android:layout_weight="1"/>
+
+                <in.co.eko.fundu.views.customviews.CustomEditText
+                    android:id="@+id/editText_Year2"
+                    android:background="@drawable/code_letter_back"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp30"
+                    android:hint="4"
+                    android:textColor="@color/Black"
+                    android:ems="1"
+                    app:fontname="OCR A Std.ttf"
+                    android:maxLength="1"
+                    android:maxEms="1"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp14"
+                    android:layout_weight="1"/>
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/imageViewCard"
+                    android:layout_marginLeft="@dimen/dp160"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="right|end"
+                    app:srcCompat="@drawable/ic_visa_inc_logo"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp25" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+     </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <in.co.eko.fundu.views.customviews.CustomButton
+
+        android:textColor="@color/White"
+        app:fontname="Muli-SemiBold.ttf"
+        android:id="@+id/next"
+        android:layout_width="@dimen/dp250"
+        android:layout_height="@dimen/dp55"
+        style="@style/CommonButtonStyle"
+        android:layout_below="@+id/relativeLayout_card"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_backgrnd"
+        android:enabled="true"
+        android:text="@string/next" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<LinearLayout android:id="@+id/llCompassView"
+    android:visibility="visible"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <in.co.eko.fundu.views.customviews.CustomTextView
+        android:id="@+id/pair_contact_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_below="@+id/profile_info"
+        android:gravity="center"
+        android:textSize="@dimen/sp14"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        app:fontname="Muli-Light.ttf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wholeCompass"
+        android:layout_below="@+id/pair_contact_desc"
+        android:layout_gravity="center">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_compass"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+
+                android:id="@+id/main_compass"
+                android:layout_width="@dimen/dp180"
+                android:layout_height="@dimen/dp180"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_main_compass"/>
+
+            <ImageView
+                app:srcCompat="@drawable/ic_needle"
+                android:id="@+id/needle"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/distance"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/warm_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_below="@+id/rl_compass"
+            android:gravity="center"
+            android:textSize="@dimen/sp10"
+            app:fontname="Muli-Regular.ttf"/>
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/note"
+            android:layout_marginTop="@dimen/dp15"
+            android:textColor="@color/warm_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/note"
+            android:layout_below="@+id/navigatell"
+            android:gravity="center"
+            android:textSize="@dimen/sp14"
+            app:fontname="Muli-Regular.ttf"/>
+
+        <LinearLayout
+            android:id="@+id/navigatell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_below="@+id/rl_compass"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:id="@+id/nav_icon"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_navigate_atm"
+                />
+            <in.co.eko.fundu.views.customviews.CustomTextView
+
+                android:id="@+id/navigate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="@string/navigate"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="@dimen/sp12"
+                app:fontname="Muli-Light.ttf"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/pair_contact_desc"
+        android:layout_marginLeft="@dimen/dp20"
+        android:visibility="gone"
+        android:id="@+id/kenVerification">
+
+        <include
+
+            layout="@layout/kenyatranx_verification_code"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical">
+
+        <in.co.eko.fundu.views.customviews.CustomButton
+            android:id="@+id/whenYouMeet"
+            app:fontname="Muli-Light.ttf"
+            android:layout_width="@dimen/dp200"
+            android:layout_height="@dimen/dp50"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/we_have_met"
+            android:tag="1"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:background="@drawable/green_button_selector"/>
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/dp10"
+            app:fontname="Muli-SemiBold.ttf"
+            android:layout_marginTop="@dimen/dp10"
+            android:textSize="14sp"
+            android:visibility="visible"
+            android:id="@+id/cancelTransaction"
+            android:text="@string/cancel_transaction"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textColor="@color/black_38" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

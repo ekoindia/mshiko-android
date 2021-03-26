@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentContainerken"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_transaction_success">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_background"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:text="@string/you"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/yourname"
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_mail"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="48dp"
+            android:background="@color/DividerColor" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/provider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="47dp"
+                    android:layout_marginStart="47dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:gravity="center_vertical"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/psname"
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user_profile_mail"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/TitleColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_mobile"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/psnmbr"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="-10dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user_profile_call"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/TitleColor" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawableLeft="@drawable/ic_user_profile_call"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="Lorem Ipsum"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+        <!--android:textColor="@color/TitleColor" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginTop="-10dp"-->
+        <!--android:alpha="0.7"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="a minute ago"-->
+        <!--android:textSize="12sp" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="48dp"
+            android:background="@color/DividerColor" />
+
+        <TextView
+            android:id="@+id/pstransactionMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/deducted_from_acc"
+            android:textColor="@color/TitleColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/psamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:drawableLeft="@drawable/ic_user_profile_cash"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor"
+            tools:text="Rs. 2,500" />
+        <!--android:text="@string/have_been_sent_from_your_wallet_1"-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="-8dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:background="@color/DividerColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/txn_id"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/psTid"
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_bank"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/TitleColor"
+            android:text="FUNDU_JAN_733f9y5b" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="-8dp"
+            android:background="@color/DividerColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user_profile_mail"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

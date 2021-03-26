@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="in.co.eko.fundu.fragments.NetBankingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/TitleColor"
+        android:text="@string/select_bank"
+        android:textSize="@dimen/text_sizes_medium"
+        android:id="@+id/textView6" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/textView6" />
+    <TextView
+        android:id="@+id/tv_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/string_help"/>
+    <LinearLayout
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_above="@+id/tv_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:entries="@array/other_bank"
+            android:id="@+id/spinner3" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:background="@drawable/green_button_background"
+            android:text="@string/string_ok"
+            android:textColor="@color/White"
+            android:id="@+id/button"
+            android:filterTouchesWhenObscured="true" />
+    </LinearLayout>
+
+</RelativeLayout>

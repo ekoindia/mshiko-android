@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ratingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:showIn="@layout/activity_transaction_success">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/ratingChildLayout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/tap_to_rate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorPrimary" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:minHeight="35dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:progressDrawable="@drawable/selector_rating_star"
+        android:rating="0" />
+
+    <LinearLayout
+        android:id="@+id/ratingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.7"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:text="@string/demo_string"
+            android:textColor="@color/TitleColor"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/rating_type" />
+
+        <EditText
+            android:id="@+id/et_your_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/what_happened" />
+
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/done"
+        android:layout_width="140dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/green_button_background"
+        android:text="@string/submit"
+        android:textColor="@color/White"
+        android:textSize="12sp"
+        android:filterTouchesWhenObscured="true"/>
+</LinearLayout>

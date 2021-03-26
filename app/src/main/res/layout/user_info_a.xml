@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/profile_info"
+android:weightSum="2"
+android:layout_marginBottom="@dimen/dp10"
+android:layout_marginTop="@dimen/dp15">
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="1.5"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+
+    <in.co.eko.fundu.views.CircleImageView
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:id="@+id/user_image"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp10"
+        android:src="@drawable/ic_user_image"
+        />
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            app:fontname="Muli-Regular.ttf"
+            android:textColor="@color/Black"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"
+            android:textSize="@dimen/sp20" />
+
+        <LinearLayout
+            android:id="@+id/ratingll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginTop="@dimen/dp10">
+
+            <ImageView
+                android:layout_width="@dimen/dp10"
+                android:layout_height="@dimen/dp10"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_rating"/>
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:textColor="@color/Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_rating"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/sp15"
+                android:layout_marginLeft="@dimen/dp10"
+                app:fontname="Roboto-Regular.ttf"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp50"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/white_three"
+        />
+
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_call"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+
+                android:padding="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_call_green"
+                android:id="@+id/call"
+                android:layout_gravity="center"/>
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                android:layout_gravity="center"
+                app:fontname="Muli-Regular.ttf"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

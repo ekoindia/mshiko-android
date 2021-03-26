@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+<ImageView
+    android:id="@+id/bank_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_margin="16dp"
+    tools:src="@drawable/ic_axis_bank"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="AXIS Bank"
+        android:id="@+id/bankName"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bank_image"
+        android:layout_toEndOf="@+id/bank_image" />
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:id="@+id/tag"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--tools:src="@drawable/ic_card_icon"/>-->
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/bank_image"-->
+        <!--android:layout_marginTop="-30dp"-->
+        <!--android:layout_marginLeft="-30dp"-->
+        <!--android:id="@+id/tag_green"-->
+        <!--android:layout_toRightOf="@+id/bank_image"-->
+        <!--tools:src="@drawable/ic_card_icon_green"/>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.5"
+        android:layout_alignParentBottom="true"
+        android:background="@color/DividerColor"
+        android:layout_toRightOf="@+id/bank_image"
+        android:layout_toEndOf="@+id/bank_image" />
+</RelativeLayout>

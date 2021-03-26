@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.co.eko.fundu.fragments.SelectSimFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_noSimCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="@dimen/sp2"
+            android:text="@string/oops"
+            android:textColor="@color/warm_pink"
+            android:textSize="@dimen/sp36"
+            app:fontname="Muli-SemiBold.ttf" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp40"
+            app:srcCompat="@drawable/ic_sim" />
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/sp2"
+            android:text="@string/no_sim"
+            android:textColor="@color/brownish_grey"
+            android:textSize="@dimen/sp13"
+            app:fontname="Muli-Regular.ttf" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearLayout_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/textView_title"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp20"
+            android:lineSpacingExtra="1sp"
+            android:textColor="@color/topaz_two"
+            android:textSize="@dimen/sp22"
+            app:fontname="Muli-SemiBold.ttf"
+            android:text="@string/phone_num" />
+
+        <in.co.eko.fundu.views.customviews.CustomTextView
+            android:id="@+id/textView_message"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:textSize="@dimen/sp16"
+            android:gravity="center_horizontal"
+            app:fontname="Muli-SemiBold.ttf"
+            android:text="@string/phonenumber_message" />
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_sim1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+
+                android:id="@+id/textView_sim1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="11sp"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp12"
+                app:fontname="Muli-SemiBold.ttf" />
+
+
+            <ImageView
+                android:id="@+id/img_sim1"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp60"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                app:srcCompat="@drawable/ic_sim" />
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/textView_sim1_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:lineSpacingExtra="11sp"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp12"
+                app:fontname="Muli-SemiBold.ttf" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_gravity="center"
+            android:background="@color/white_two" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_sim2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:orientation="vertical">
+
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/textView_sim2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="11sp"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp12"
+                app:fontname="Muli-SemiBold.ttf"/>
+
+
+            <ImageView
+                android:id="@+id/img_sim2"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp60"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                app:srcCompat="@drawable/ic_sim" />
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:id="@+id/textView_sim2_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:lineSpacingExtra="11sp"
+                android:textColor="@color/brownish_grey"
+                android:textSize="@dimen/sp12"
+                app:fontname="Muli-SemiBold.ttf"/>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

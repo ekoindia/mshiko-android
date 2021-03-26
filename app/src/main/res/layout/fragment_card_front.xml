@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.CheckOutActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp230"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_card_main"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+
+            <ImageView
+                android:id="@+id/imageview_bank"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/ic_bank_logo"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="@dimen/dp55"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="@dimen/dp10"
+                app:srcCompat="@drawable/ic_chip"/>
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                app:fontname="OCR A Std.ttf"
+                android:id="@+id/tv_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/card_number_sample"
+
+                android:textSize="@dimen/sp18" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    app:fontname="OCR A Std.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="@string/card_validity_label"
+                    android:textSize="@dimen/sp14" />
+
+                <in.co.eko.fundu.views.customviews.CustomTextView
+                    android:layout_marginTop="@dimen/dp5"
+                    app:fontname="OCR A Std.ttf"
+                    android:id="@+id/tv_validity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_validity_sample"
+                    android:textSize="@dimen/sp14" />
+
+            </LinearLayout>
+
+            <in.co.eko.fundu.views.customviews.CustomTextView
+                android:visibility="gone"
+                app:fontname="OCR A Std.ttf"
+                android:id="@+id/tv_member_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/card_name_sample"
+                android:textAllCaps="true"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivType"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp50"
+             />
+
+    </RelativeLayout>
+
+</FrameLayout>

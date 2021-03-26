@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/fragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="in.co.eko.fundu.activities.PairContactFoundActivity">
+
+    <LinearLayout
+        android:id="@+id/pair_contact_main_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/title_view_transactions"/>
+
+            <RelativeLayout
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleView"
+                android:layout_marginTop="@dimen/dp10"
+                android:paddingLeft="@dimen/dp30"
+                android:paddingRight="@dimen/dp30"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white_three"/>
+
+
+                <include layout="@layout/progressbar3dots"></include>
+
+                <include layout="@layout/progressbar4dots"></include>
+
+                <include layout="@layout/progressbar2dots"></include>
+            </RelativeLayout>
+
+
+            <include layout="@layout/user_info_a"/>
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:visibility="visible">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/enterTransactionCodeView"
+                    layout="@layout/enter_transaction_code"
+                    android:visibility="gone"/>
+
+                <include
+                    android:id="@+id/llCompassView"
+                    layout="@layout/comapss_view"
+                    android:visibility="visible"/>
+
+
+                <LinearLayout
+                    android:id="@+id/trancation_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    >
+                    <include layout="@layout/transaction_success"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/feedback_botton"></include>
+</RelativeLayout>
